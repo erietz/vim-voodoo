@@ -1,31 +1,57 @@
 local Color, colors, Group, groups, styles = require("colorbuddy").setup()
 
--- Color definitions
-Color.new('background',          "#161712")
-Color.new('foreground',          "#B4B7A4")
-Color.new('voodoo_0',            "#21221B")
-Color.new('voodoo_1',            "#2C2E24")
-Color.new('voodoo_2',            "#37392D")
-Color.new('voodoo_3',            "#424536")
-Color.new('voodoo_4',            "#585b48")
-Color.new('voodoo_5',            "#646751")
-Color.new('voodoo_6',            "#6f725a")
 
-Color.new('voodoo_purple_dark',  "#663B4A")
-Color.new('voodoo_purple_light', "#78556D")
-Color.new('voodoo_forest',       "#645D26")
-Color.new('voodoo_green',        "#286D34")
-Color.new('voodoo_aqua',         "#5EBC9D")
-Color.new('voodoo_seafoam',      "#7BC274")
-Color.new('voodoo_crimson',      "#A8303C")
-Color.new('voodoo_blue_light',   "#687B8C")
-Color.new('voodoo_yellow',       "#D49F3A")
-Color.new('voodoo_orange',       "#CC8223")
-Color.new('voodoo_orange_red',   "#DE5A2A")
-Color.new('voodoo_cream',        "#DFBA84")
-Color.new('voodoo_white',        "#FAF4EE")
-Color.new('voodoo_brown',        "#BA6731")
-Color.new('voodoo_fire',         "#CF222B")
+local background          = "#161712"
+local foreground          = "#B4B7A4"
+local voodoo_0            = "#21221B"
+local voodoo_1            = "#2C2E24"
+local voodoo_2            = "#37392D"
+local voodoo_3            = "#424536"
+local voodoo_4            = "#585b48"
+local voodoo_5            = "#646751"
+local voodoo_6            = "#6f725a"
+local voodoo_purple_dark  = "#663B4A"
+local voodoo_purple_light = "#78556D"
+local voodoo_forest       = "#645D26"
+local voodoo_green        = "#286D34"
+local voodoo_aqua         = "#5EBC9D"
+local voodoo_seafoam      = "#7BC274"
+local voodoo_crimson      = "#A8303C"
+local voodoo_blue_light   = "#687B8C"
+local voodoo_yellow       = "#D49F3A"
+local voodoo_orange       = "#CC8223"
+local voodoo_orange_red   = "#DE5A2A"
+local voodoo_cream        = "#DFBA84"
+local voodoo_white        = "#FAF4EE"
+local voodoo_brown        = "#BA6731"
+local voodoo_fire         = "#CF222B"
+
+
+-- Color definitions
+Color.new('background',          background         )
+Color.new('foreground',          foreground         )
+Color.new('voodoo_0',            voodoo_0           )
+Color.new('voodoo_1',            voodoo_1           )
+Color.new('voodoo_2',            voodoo_2           )
+Color.new('voodoo_3',            voodoo_3           )
+Color.new('voodoo_4',            voodoo_4           )
+Color.new('voodoo_5',            voodoo_5           )
+Color.new('voodoo_6',            voodoo_6           )
+Color.new('voodoo_purple_dark',  voodoo_purple_dark )
+Color.new('voodoo_purple_light', voodoo_purple_light)
+Color.new('voodoo_forest',       voodoo_forest      )
+Color.new('voodoo_green',        voodoo_green       )
+Color.new('voodoo_aqua',         voodoo_aqua        )
+Color.new('voodoo_seafoam',      voodoo_seafoam     )
+Color.new('voodoo_crimson',      voodoo_crimson     )
+Color.new('voodoo_blue_light',   voodoo_blue_light  )
+Color.new('voodoo_yellow',       voodoo_yellow      )
+Color.new('voodoo_orange',       voodoo_orange      )
+Color.new('voodoo_orange_red',   voodoo_orange_red  )
+Color.new('voodoo_cream',        voodoo_cream       )
+Color.new('voodoo_white',        voodoo_white       )
+Color.new('voodoo_brown',        voodoo_brown       )
+Color.new('voodoo_fire',         voodoo_fire        )
 
 -- Color assignments
 Group.new('Normal',              colors.foreground,          colors.voodoo_0,      styles.NONE)
@@ -139,3 +165,21 @@ Group.new('luaFunctionCall' , groups.Function    , groups.Function   , groups.Fu
 
 -- Python
 Group.new('pythonoperator'  , groups.Operator , groups.Operator , styles.none)
+
+-- Terminal
+vim.api.nvim_set_var('terminal_color_0',   voodoo_forest)
+vim.api.nvim_set_var('terminal_color_1',   voodoo_crimson)
+vim.api.nvim_set_var('terminal_color_2',   voodoo_green)
+vim.api.nvim_set_var('terminal_color_3',   voodoo_crimson)
+vim.api.nvim_set_var('terminal_color_4',   voodoo_yellow)
+vim.api.nvim_set_var('terminal_color_5',   voodoo_blue_light)
+vim.api.nvim_set_var('terminal_color_6',   voodoo_aqua)
+vim.api.nvim_set_var('terminal_color_7',   voodoo_cream)
+vim.api.nvim_set_var('terminal_color_8',   voodoo_forest)
+vim.api.nvim_set_var('terminal_color_9',   voodoo_crimson)
+vim.api.nvim_set_var('terminal_color_10',  voodoo_green)
+vim.api.nvim_set_var('terminal_color_11',  voodoo_yellow)
+vim.api.nvim_set_var('terminal_color_12',  voodoo_blue_light)
+vim.api.nvim_set_var('terminal_color_13',  voodoo_crimson)
+vim.api.nvim_set_var('terminal_color_14',  voodoo_aqua)
+vim.api.nvim_set_var('terminal_color_15',  voodoo_cream)
