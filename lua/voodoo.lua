@@ -1,8 +1,8 @@
 local Color, colors, Group, groups, styles = require("colorbuddy").setup()
 
-local background        = "#161712"
-local foreground        = "#ECD2AB"
-local voodoo_0          = "#21221B"
+local background        = "#21221B"
+--local foreground        = "#ECD2AB"
+local foreground        = "#DFBA84"
 local voodoo_1          = "#2C2E24"
 local voodoo_2          = "#37392D"
 local voodoo_3          = "#424536"
@@ -27,14 +27,13 @@ local voodoo_fire       = "#CF222B"
 -- Color definitions
 Color.new('background',        background        )
 Color.new('foreground',        foreground        )
-Color.new('voodoo_0',          voodoo_0          )
 Color.new('voodoo_1',          voodoo_1          )
 Color.new('voodoo_2',          voodoo_2          )
 Color.new('voodoo_3',          voodoo_3          )
 Color.new('voodoo_4',          voodoo_4          )
 Color.new('voodoo_5',          voodoo_5          )
 Color.new('voodoo_6',          voodoo_6          )
-Color.new('voodoo_purple',     voodoo_purple)
+Color.new('voodoo_purple',     voodoo_purple     )
 Color.new('voodoo_forest',     voodoo_forest     )
 Color.new('voodoo_green',      voodoo_green      )
 Color.new('voodoo_aqua',       voodoo_aqua       )
@@ -50,12 +49,12 @@ Color.new('voodoo_brown',      voodoo_brown      )
 Color.new('voodoo_fire',       voodoo_fire       )
 
 -- Color assignments
-Group.new('Normal',              colors.foreground,        colors.voodoo_0,      styles.NONE)
+Group.new('Normal',              colors.foreground,        colors.background,      styles.NONE)
 --
-Group.new('Comment',             colors.voodoo_4,          colors.none,          styles.NONE)
+Group.new('Comment',             colors.voodoo_6,          colors.none,          styles.NONE)
 --
 Group.new("Constant",            colors.voodoo_purple,     colors.none,          styles.NONE)
-Group.new("String",              colors.voodoo_cream,      colors.none,          styles.NONE)
+Group.new("String",              colors.voodoo_brown,      colors.none,          styles.NONE)
 Group.new('Character',           colors.voodoo_purple,     colors.none,          styles.NONE)
 Group.new("Number",              colors.voodoo_purple,     colors.none,          styles.NONE)
 Group.new('Boolean',             colors.voodoo_purple,     colors.none,          styles.NONE)
@@ -78,7 +77,7 @@ Group.new("Define",              colors.voodoo_blue,       colors.none,         
 Group.new("Macro",               colors.voodoo_blue,       colors.none,          styles.NONE)
 Group.new("PreCondit",           colors.voodoo_blue,       colors.none,          styles.NONE)
 --
-Group.new("Type",                colors.voodoo_forest,     colors.none,          styles.italic)
+Group.new("Type",                colors.voodoo_forest:light(),     colors.none,          styles.italic)
 Group.new("StorageClass",        colors.voodoo_cream,      colors.none,          styles.NONE)
 Group.new("Structure",           colors.voodoo_cream,      colors.none,          styles.NONE)
 Group.new("Typedef",             colors.voodoo_cream,      colors.none,          styles.NONE)
@@ -95,13 +94,13 @@ Group.new('Ignore',              colors.voodoo_orange,     colors.none,         
 Group.new('Error',               colors.voodoo_fire,       colors.none,          styles.bold)
 Group.new("Todo",                colors.voodoo_seafoam,    colors.none,          styles.NONE)
 --
-Group.new('TabLineSel',          colors.voodoo_brown,      colors.voodoo_1, styles.bold )
+Group.new('TabLineSel',          colors.voodoo_crimson,      colors.voodoo_1, styles.bold )
 Group.new('TabLineSelSeparator', colors.voodoo_yellow,     colors.none,          styles.none)
 Group.new('TabLine',             colors.voodoo_4,          colors.voodoo_2,      styles.none)
 Group.new('TabLineSeparator',    colors.voodoo_2,          colors.none,          styles.none)
-Group.new('TablineFill',        colors.voodoo_brown,       colors.voodoo_1,          styles.none)
-Group.new('StatusLine',          colors.voodoo_brown,      colors.voodoo_1,      styles.none)
-Group.new('StatusLineNC',        colors.voodoo_2,          colors.voodoo_0,      styles.none)
+Group.new('TablineFill',         colors.voodoo_crimson,    colors.voodoo_1,          styles.none)
+Group.new('StatusLine',          colors.voodoo_crimson,    colors.voodoo_1,      styles.bold)
+Group.new('StatusLineNC',        colors.voodoo_2,          colors.background,      styles.none)
 Group.new('Conceal',             colors.voodoo_3,          colors.none,          styles.none)
 Group.new('VertSplit',           colors.voodoo_3,          colors.none,          styles.none)
 --
@@ -110,35 +109,38 @@ Group.new('WarningMsg',          colors.voodoo_5,          colors.voodoo_cream, 
 Group.new("Title",               colors.voodoo_4,          colors.none,          styles.none)
 Group.new("CursorColumn",        colors.voodoo_1,          colors.none,          styles.NONE)
 Group.new("LineNr",              colors.voodoo_4,          colors.none,          styles.NONE)
-Group.new("CursorLineNr",        colors.voodoo_brown,      colors.none,          styles.NONE)
+Group.new("CursorLineNr",        colors.voodoo_crimson,      colors.none,          styles.NONE)
 Group.new("Line",                colors.voodoo_cream,      colors.none,          styles.bold)
 Group.new("SignColumn",          colors.none,              colors.none,          styles.NONE)
 Group.new("ColorColumn",         colors.none,              colors.voodoo_1,      styles.none)
 Group.new("Cursor",              colors.voodoo_1,          colors.voodoo_4,      styles.none)
 Group.new("CursorLine",          colors.none,              colors.background,    styles.none)
-Group.new("iCursor",             colors.voodoo_1,          colors.voodoo_1,      styles.none)
+Group.new("iCursor",             colors.voodoo_1,          colors.voodoo_4,      styles.none)
 Group.new("EndOfBuffer",         colors.none,              colors.none,          styles.none)
-Group.new("MatchParen",          colors.voodoo_1,          colors.voodoo_3,      styles.none)
+Group.new("MatchParen",          colors.voodoo_crimson,    colors.voodoo_1,      styles.none)
 Group.new("NonText",             colors.none,              colors.none,          styles.none)
 Group.new("PMenu",               colors.voodoo_brown,      colors.voodoo_1,      styles.none)
 Group.new("PmenuSbar",           colors.voodoo_4,          colors.voodoo_1,      styles.none)
-Group.new("PMenuSel",            colors.voodoo_crimson,    colors.voodoo_0,      styles.none)
+Group.new("PMenuSel",            colors.voodoo_crimson,    colors.background,      styles.none)
 Group.new("PmenuThumb",          colors.voodoo_1,          colors.voodoo_3,      styles.none)
-Group.new("SpecialKey",          colors.voodoo_3,          colors.voodoo_3,      styles.none)
-Group.new("SpellBad",            colors.voodoo_orange,     colors.voodoo_1,      styles.none)
+Group.new("NormalFloat",         colors.voodoo_brown,          colors.voodoo_1,      styles.none)
+Group.new("SpecialKey",          colors.voodoo_white,          colors.voodoo_3,      styles.none)
+Group.new("SpellBad",            groups.String,            colors.none,          styles.underline)
 Group.new("SpellCap",            colors.voodoo_fire,       colors.voodoo_1,      styles.none)
 Group.new("SpellLocal",          colors.voodoo_5,          colors.voodoo_1,      styles.none)
 Group.new("SpellRare",           colors.voodoo_6,          colors.voodoo_1,      styles.none)
-Group.new("Visual",              colors.voodoo_4,          colors.voodoo_yellow, styles.none)
-Group.new("VisualNOS",           colors.voodoo_2,          colors.voodoo_1,      styles.none)
-Group.new("Whitespace",          colors.voodoo_3,          colors.voodoo_0,      styles.none)
+Group.new("Visual",              colors.voodoo_1,          colors.voodoo_yellow, styles.none)
+Group.new("VisualNOS",           colors.background,          colors.foreground,      styles.none)
+Group.new("Whitespace",          colors.voodoo_3,          colors.background,      styles.none)
 -- Git gutters and diffs
 Group.new('DiffAdd',             colors.voodoo_green,      colors.voodoo_1,      styles.none)
 Group.new('DiffChange',          colors.voodoo_yellow,     colors.voodoo_1,      styles.none)
 Group.new('DiffDelete',          colors.voodoo_fire,       colors.voodoo_1,      styles.none)
 Group.new('DiffText',            colors.voodoo_cream,      colors.voodoo_1,      styles.none)
+-- COC
+Group.new('CocErrorHighlight',   colors.background,        colors.foreground,    styles.none)
 -- FZF
-Group.new('fzf1',               colors.voodoo_crimson,      colors.voodoo_0,      styles.none)
+Group.new('fzf1',               colors.voodoo_crimson,      colors.background,      styles.none)
 Group.new('fzf2',               colors.voodoo_brown,      colors.voodoo_1,      styles.none)
 Group.new('fzf3',               colors.voodoo_brown,      colors.voodoo_1,      styles.none)
 -- "+- Neovim Support -+
