@@ -90,7 +90,7 @@ Group.new('TabLine',             colors.voodoo_3,             colors.voodoo_1,  
 Group.new('TabLineSeparator',    colors.voodoo_1,             colors.none,          styles.none)
 Group.new('TablineFill',         colors.voodoo_red,           colors.voodoo_0,      styles.none)
 Group.new('StatusLine',          colors.voodoo_5,             colors.voodoo_0,      styles.bold)
-Group.new('StatusLineNC',        colors.voodoo_1,             colors.background,    styles.none)
+Group.new('StatusLineNC',        colors.voodoo_2,             colors.background,    styles.none)
 Group.new('Conceal',             colors.voodoo_2,             colors.none,          styles.none)
 Group.new('VertSplit',           colors.voodoo_2,             colors.none,          styles.none)
 --
