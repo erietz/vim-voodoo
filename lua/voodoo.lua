@@ -13,7 +13,7 @@ local voodoo_purple     = "#78556D"
 local voodoo_forest     = "#645D26"
 local voodoo_green      = "#286D34"
 local voodoo_aqua       = "#5EBC9D"
-local voodoo_seafoam    = "#7BC274"
+local voodoo_seafoam    = "#8FC77D"
 local voodoo_crimson    = "#A8303C"
 local voodoo_blue       = "#687B8C"
 local voodoo_yellow     = "#D49F3A"
@@ -67,7 +67,7 @@ Group.new("Statement",           colors.voodoo_yellow,     colors.none,         
 Group.new("Conditional",         colors.voodoo_yellow,     colors.none,          styles.NONE)
 Group.new("Repeat",              colors.voodoo_yellow,     colors.none,          styles.NONE)
 Group.new("Label",               colors.voodoo_yellow,     colors.none,          styles.italic)
-Group.new("Operator",            colors.voodoo_aqua,       colors.none,          styles.NONE)
+Group.new("Operator",            colors.voodoo_seafoam,       colors.none,          styles.NONE)
 Group.new("Keyword",             colors.voodoo_yellow,     colors.none,          styles.italic)
 Group.new("Exception",           colors.voodoo_yellow,     colors.none,          styles.NONE)
 --
@@ -78,9 +78,9 @@ Group.new("Macro",               colors.voodoo_blue,       colors.none,         
 Group.new("PreCondit",           colors.voodoo_blue,       colors.none,          styles.NONE)
 --
 Group.new("Type",                colors.voodoo_forest:light(),     colors.none,          styles.italic)
-Group.new("StorageClass",        colors.voodoo_cream,      colors.none,          styles.NONE)
-Group.new("Structure",           colors.voodoo_cream,      colors.none,          styles.NONE)
-Group.new("Typedef",             colors.voodoo_cream,      colors.none,          styles.NONE)
+Group.new("StorageClass",        colors.voodoo_orange,      colors.none,          styles.NONE)
+Group.new("Structure",           colors.voodoo_orange,      colors.none,          styles.NONE)
+Group.new("Typedef",             colors.voodoo_forest:light(),      colors.none,          styles.NONE)
 --
 Group.new("Special",             colors.voodoo_orange,     colors.none,          styles.NONE)
 Group.new("SpecialChar",         colors.voodoo_orange,     colors.none,          styles.NONE)
@@ -92,7 +92,7 @@ Group.new("Debug",               colors.voodoo_orange,     colors.none,         
 Group.new('Underlined',          colors.voodoo_orange,     colors.none,          styles.bold)
 Group.new('Ignore',              colors.voodoo_orange,     colors.none,          styles.bold)
 Group.new('Error',               colors.voodoo_fire,       colors.none,          styles.bold)
-Group.new("Todo",                colors.voodoo_seafoam,    colors.none,          styles.NONE)
+Group.new("Todo",                colors.voodoo_aqua,    colors.none,          styles.NONE)
 --
 Group.new('TabLineSel',          colors.voodoo_crimson,      colors.voodoo_1, styles.bold )
 Group.new('TabLineSelSeparator', colors.voodoo_yellow,     colors.none,          styles.none)
@@ -119,7 +119,7 @@ Group.new("iCursor",             colors.voodoo_1,          colors.voodoo_4,     
 Group.new("EndOfBuffer",         colors.none,              colors.none,          styles.none)
 Group.new("MatchParen",          colors.voodoo_crimson,    colors.voodoo_1,      styles.none)
 Group.new("NonText",             colors.none,              colors.none,          styles.none)
-Group.new("PMenu",               colors.voodoo_brown,      colors.voodoo_1,      styles.none)
+Group.new("PMenu",               colors.foreground,      colors.voodoo_1,      styles.none)
 Group.new("PmenuSbar",           colors.voodoo_4,          colors.voodoo_1,      styles.none)
 Group.new("PMenuSel",            colors.voodoo_crimson,    colors.background,      styles.none)
 Group.new("PmenuThumb",          colors.voodoo_1,          colors.voodoo_3,      styles.none)
@@ -138,7 +138,7 @@ Group.new('DiffChange',          colors.voodoo_yellow,     colors.voodoo_1,     
 Group.new('DiffDelete',          colors.voodoo_fire,       colors.voodoo_1,      styles.none)
 Group.new('DiffText',            colors.voodoo_cream,      colors.voodoo_1,      styles.none)
 -- COC
-Group.new('CocErrorHighlight',   colors.background,        colors.foreground,    styles.none)
+Group.new('CocErrorHighlight',   colors.none,               colors.voodoo_2,           styles.underline)
 -- FZF
 Group.new('fzf1',               colors.voodoo_crimson,      colors.background,      styles.none)
 Group.new('fzf2',               colors.voodoo_brown,      colors.voodoo_1,      styles.none)
@@ -169,6 +169,23 @@ Group.new("markdownError",       colors.voodoo_crimson,    colors.none)
 Group.new('luaFunctionCall'      ,                         groups.Function       ,           groups.Function , groups.Function)
 -- Python
 Group.new('pythonoperator'       ,                         groups.Operator       ,           groups.Operator , styles.none)
+--hi! link pythonBuiltin GruvboxOrange
+--hi! link pythonBuiltinObj GruvboxOrange
+--hi! link pythonBuiltinFunc GruvboxOrange
+--hi! link pythonFunction GruvboxAqua
+--hi! link pythonDecorator GruvboxRed
+--hi! link pythonInclude GruvboxBlue
+--hi! link pythonImport GruvboxBlue
+--hi! link pythonRun GruvboxBlue
+--hi! link pythonCoding GruvboxBlue
+--hi! link pythonOperator GruvboxRed
+--hi! link pythonException GruvboxRed
+--hi! link pythonExceptions GruvboxPurple
+--hi! link pythonBoolean GruvboxPurple
+--hi! link pythonDot GruvboxFg3
+--hi! link pythonConditional GruvboxRed
+--hi! link pythonRepeat GruvboxRed
+--hi! link pythonDottedName GruvboxGreenBold
 
 -- Terminal
 vim.api.nvim_set_var('terminal_color_0',   voodoo_forest)
