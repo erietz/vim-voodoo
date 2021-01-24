@@ -2,12 +2,12 @@ local Color, colors, Group, groups, styles = require("colorbuddy").setup()
 
 local background     = "#21221B"
 local foreground     = "#DFBA84"
-local voodoo_0       = "#2C2E24"
-local voodoo_1       = "#37392D"
-local voodoo_2       = "#424536"
-local voodoo_3       = "#585b48"
---local voodoo_4       = "#646751"
-local voodoo_4       = "#6f725a"
+local bg_0           = "#2C2E24"
+local bg_1           = "#37392D"
+local bg_2           = "#424536"
+local bg_3           = "#585b48"
+local bg_4           = "#646751"
+local bg_5           = "#6f725a"
 local voodoo_red     = "#B73037"
 local voodoo_green   = "#656315"
 local voodoo_blue    = "#687B8C"
@@ -18,44 +18,43 @@ local voodoo_orange  = "#E14D25"
 local voodoo_brown   = "#BA6731"
 local voodoo_fire    = "#CF222B"
 
-if vim.g.voodoo_variant == 'dark' then
-    Color.new('background',        background        )
-    Color.new('foreground',        foreground        )
-    Color.new('voodoo_0',          voodoo_0          )
-    Color.new('voodoo_1',          voodoo_1          )
-    Color.new('voodoo_2',          voodoo_2          )
-    Color.new('voodoo_3',          voodoo_3          )
-    Color.new('voodoo_4',          voodoo_4          )
-    Color.new('voodoo_red',        voodoo_red        )
-    Color.new('voodoo_green',      voodoo_green      )
-    Color.new('voodoo_blue',       voodoo_blue       )
-    Color.new('voodoo_yellow',     voodoo_yellow     )
-    Color.new('voodoo_magenta',    voodoo_magenta    )
-    Color.new('voodoo_cyan',       voodoo_cyan       )
-    Color.new('voodoo_orange',     voodoo_orange     )
-    Color.new('voodoo_seafoam',    voodoo_seafoam    )
-    Color.new('voodoo_brown',      voodoo_brown      )
-    Color.new('voodoo_fire',       voodoo_fire       )
+-- Color definitions
+if vim.g.voodoo_variant == 'light' then
+    Color.new('background',     bg_0)
+    Color.new('foreground',     foreground)
+    Color.new('voodoo_0',       bg_1)
+    Color.new('voodoo_1',       bg_2)
+    Color.new('voodoo_2',       bg_3)
+    Color.new('voodoo_3',       bg_4)
+    Color.new('voodoo_4',       bg_5)
+    Color.new('voodoo_red',     voodoo_red)
+    Color.new('voodoo_green',   voodoo_green)
+    Color.new('voodoo_blue',    voodoo_blue)
+    Color.new('voodoo_yellow',  voodoo_yellow)
+    Color.new('voodoo_magenta', voodoo_magenta)
+    Color.new('voodoo_cyan',    voodoo_cyan)
+    Color.new('voodoo_orange',  voodoo_orange)
+    Color.new('voodoo_seafoam', voodoo_seafoam)
+    Color.new('voodoo_brown',   voodoo_brown)
+    Color.new('voodoo_fire',    voodoo_fire)
 else
-    -- Color definitions
-    Color.new('background',        voodoo_0          )
-    Color.new('foreground',        foreground        )
-    Color.new('voodoo_0',          voodoo_1          )
-    Color.new('voodoo_1',          voodoo_2          )
-    Color.new('voodoo_2',          voodoo_3          )
-    Color.new('voodoo_3',          voodoo_4          )
-    --Color.new('voodoo_4',          voodoo_5          )
-    Color.new('voodoo_4',          voodoo_4          )
-    Color.new('voodoo_red',        voodoo_red        )
-    Color.new('voodoo_green',      voodoo_green      )
-    Color.new('voodoo_blue',       voodoo_blue       )
-    Color.new('voodoo_yellow',     voodoo_yellow     )
-    Color.new('voodoo_magenta',    voodoo_magenta    )
-    Color.new('voodoo_cyan',       voodoo_cyan       )
-    Color.new('voodoo_orange',     voodoo_orange     )
-    Color.new('voodoo_seafoam',    voodoo_seafoam    )
-    Color.new('voodoo_brown',      voodoo_brown      )
-    Color.new('voodoo_fire',       voodoo_fire       )
+    Color.new('background',     background)
+    Color.new('foreground',     foreground)
+    Color.new('voodoo_0',       bg_0)
+    Color.new('voodoo_1',       bg_1)
+    Color.new('voodoo_2',       bg_2)
+    Color.new('voodoo_3',       bg_3)
+    Color.new('voodoo_4',       bg_4)
+    Color.new('voodoo_red',     voodoo_red)
+    Color.new('voodoo_green',   voodoo_green)
+    Color.new('voodoo_blue',    voodoo_blue)
+    Color.new('voodoo_yellow',  voodoo_yellow)
+    Color.new('voodoo_magenta', voodoo_magenta)
+    Color.new('voodoo_cyan',    voodoo_cyan)
+    Color.new('voodoo_orange',  voodoo_orange)
+    Color.new('voodoo_seafoam', voodoo_seafoam)
+    Color.new('voodoo_brown',   voodoo_brown)
+    Color.new('voodoo_fire',    voodoo_fire)
 end
 
 -- Color assignments
@@ -133,7 +132,7 @@ Group.new("PMenu",               colors.foreground,           colors.voodoo_0,  
 Group.new("PmenuSbar",           colors.voodoo_3,             colors.voodoo_0,      styles.none)
 Group.new("PMenuSel",            colors.voodoo_red,           colors.background,    styles.none)
 Group.new("PmenuThumb",          colors.voodoo_0,             colors.voodoo_2,      styles.none)
-Group.new("NormalFloat",         colors.foreground,         colors.voodoo_0,      styles.none)
+Group.new("NormalFloat",         colors.foreground,           colors.voodoo_0,      styles.none)
 Group.new("SpecialKey",          colors.foreground,           colors.voodoo_2,      styles.none)
 Group.new("SpellBad",            groups.String,               colors.none,          styles.underline)
 Group.new("SpellCap",            colors.voodoo_fire,          colors.voodoo_0,      styles.none)
@@ -142,6 +141,7 @@ Group.new("SpellRare",           colors.voodoo_4,             colors.voodoo_0,  
 Group.new("Visual",              colors.voodoo_0,             colors.voodoo_yellow, styles.none)
 Group.new("VisualNOS",           colors.background,           colors.foreground,    styles.none)
 Group.new("Whitespace",          colors.voodoo_2,             colors.background,    styles.none)
+Group.new("Folded",              colors.voodoo_0,             colors.voodoo_3,    styles.none)
 -- Git gutters and diffs
 Group.new('DiffAdd',             colors.voodoo_green,         colors.voodoo_0,      styles.none)
 Group.new('DiffChange',          colors.voodoo_yellow,        colors.voodoo_0,      styles.none)
