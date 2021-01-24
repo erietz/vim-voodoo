@@ -1,7 +1,6 @@
 local Color, colors, Group, groups, styles = require("colorbuddy").setup()
 
-local background     = "#21221B"
---local foreground     = "#DFBA84"
+local background     = "#2f2e28"
 local foreground     = "#e0d2b9"
 local voodoo_0       = "#2C2E24"
 local voodoo_1       = "#37392D"
@@ -11,13 +10,12 @@ local voodoo_3       = "#585b48"
 local voodoo_4       = "#6f725a"
 local voodoo_red     = "#B73037"
 local voodoo_green   = "#656315"
-local voodoo_blue    = "#687B8C"
+local voodoo_blue    = "#9bb4c3"
 local voodoo_yellow  = "#E3B13E"
-local voodoo_magenta = "#78556D"
-local voodoo_cyan    = "#8FC77D"
-local voodoo_orange  = "#BA6731"
---local voodoo_brown   = "#BA6731"
-local voodoo_brown   = "#DFBA84"
+local voodoo_magenta = "#9889bb"
+local voodoo_cyan    = "#577b4d"
+local voodoo_orange  = "#E14D25"
+local voodoo_brown   = "#BA6731"
 local voodoo_fire    = "#CF222B"
 
 if vim.g.voodoo_variant == 'dark' then
@@ -129,7 +127,7 @@ Group.new("Cursor",              colors.voodoo_0,             colors.voodoo_3,  
 Group.new("CursorLine",          colors.none,                 colors.background,    styles.none)
 Group.new("iCursor",             colors.voodoo_0,             colors.voodoo_3,      styles.none)
 Group.new("EndOfBuffer",         colors.none,                 colors.none,          styles.none)
-Group.new("MatchParen",          colors.none,               colors.voodoo_2,      styles.none)
+Group.new("MatchParen",          colors.voodoo_red,           colors.voodoo_0,      styles.none)
 Group.new("NonText",             colors.none,                 colors.none,          styles.none)
 Group.new("PMenu",               colors.foreground,           colors.voodoo_0,      styles.none)
 Group.new("PmenuSbar",           colors.voodoo_3,             colors.voodoo_0,      styles.none)
