@@ -4,6 +4,9 @@ All of the [seaborn](https://seaborn.pydata.org/) styles ported to vim color
 schemes with the help of
 [colorbuddy.nvim](https://github.com/tjdevries/colorbuddy.nvim)
 
+There are a total or (185 themes)(light/dark)(normal/soft/hard contast) = 1110
+variants in this repository!
+
 # Installation
 
 Using vim-plug
@@ -25,7 +28,7 @@ Plug 'erietz/vim-voodoo'
     - Consider the reversed theme (For example: change the theme from `Dark2` to `Dark2_r`)
     - Set the contrast to `soft` or `hard` using `let g:voodoo_contrast = soft`
 - You can also change the `template.lua` file and run the `colors.py` script
-to regenerate all of the colorschemes!
+to regenerate all of the colorschemes.
 
 # Problems
 
