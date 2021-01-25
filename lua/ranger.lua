@@ -1,25 +1,27 @@
 local Color, colors, Group, groups, styles = require("colorbuddy").setup()
 
--- ['#ededed', '#d1d1d1', '#adadad', '#828282', '#5c5c5c', '#2b2b2b']
-
-local background     = '#2b2b2b'
-local foreground     = "#d1d1d1"
-local voodoo_0       =  '#5c5c5c'
-local voodoo_1       =  '#828282'
-local voodoo_2       =  '#adadad'
-local voodoo_3       =  '#d1d1d1'
-local voodoo_4       = '#ededed'
-
-local voodoo_blue    =  '#4878d0'
-local voodoo_orange  =  '#ee854a'
-local voodoo_green   =  '#6acc64'
-local voodoo_red     =  '#d65f5f'
-local voodoo_magenta =  '#956cb4'
-local voodoo_brown   =  '#8c613c'
-local voodoo_fire    =  '#dc7ec0'
-local voodoo_grey     = '#797979'
-local voodoo_yellow  =  '#d5bb67'
-local voodoo_cyan    =  '#82c6e2'
+local background     = "#21221B"
+local foreground     = "#e0d2b9"
+local voodoo_0       = "#2C2E24"
+local voodoo_1       = "#37392D"
+local voodoo_2       = "#424536"
+local voodoo_3       = "#585b48"
+local voodoo_4       = "#6f725a"
+local bg_0           = "#2C2E24"
+local bg_1           = "#37392D"
+local bg_2           = "#424536"
+local bg_3           = "#585b48"
+local bg_4           = "#646751"
+local bg_5           = "#6f725a"
+local voodoo_red     = "#B73037"
+local voodoo_green   = "#656315"
+local voodoo_blue    = "#687B8C"
+local voodoo_yellow  = "#E3B13E"
+local voodoo_magenta = "#78556D"
+local voodoo_cyan    = "#8FC77D"
+local voodoo_orange  = "#BA6731"
+local voodoo_brown   = "#DFBA84"
+local voodoo_fire    = "#CF222B"
 
 -- Color definitions
 if vim.g.voodoo_variant == 'light' then
@@ -43,11 +45,11 @@ if vim.g.voodoo_variant == 'light' then
 else
     Color.new('background',     background)
     Color.new('foreground',     foreground)
-    Color.new('voodoo_0',       voodoo_0)
-    Color.new('voodoo_1',       voodoo_1)
-    Color.new('voodoo_2',       voodoo_2)
-    Color.new('voodoo_3',       voodoo_3)
-    Color.new('voodoo_4',       voodoo_4)
+    Color.new('voodoo_0',       bg_0)
+    Color.new('voodoo_1',       bg_1)
+    Color.new('voodoo_2',       bg_2)
+    Color.new('voodoo_3',       bg_3)
+    Color.new('voodoo_4',       bg_4)
     Color.new('voodoo_red',     voodoo_red)
     Color.new('voodoo_green',   voodoo_green)
     Color.new('voodoo_blue',    voodoo_blue)
@@ -58,16 +60,15 @@ else
     Color.new('voodoo_seafoam', voodoo_seafoam)
     Color.new('voodoo_brown',   voodoo_brown)
     Color.new('voodoo_fire',    voodoo_fire)
-    Color.new('voodoo_grey',    voodoo_grey)
 end
 
 -- Color assignments
 Group.new('Normal',              colors.foreground,           colors.background,    styles.NONE)
 --
-Group.new('Comment',             colors.voodoo_grey,             colors.none,          styles.NONE)
+Group.new('Comment',             colors.voodoo_4,             colors.none,          styles.NONE)
 --
 Group.new("Constant",            colors.voodoo_magenta,       colors.none,          styles.NONE)
-Group.new("String",              colors.voodoo_red,         colors.none,          styles.NONE)
+Group.new("String",              colors.voodoo_brown,         colors.none,          styles.NONE)
 Group.new('Character',           colors.voodoo_magenta,       colors.none,          styles.NONE)
 Group.new("Number",              colors.voodoo_magenta,       colors.none,          styles.NONE)
 Group.new('Boolean',             colors.voodoo_magenta,       colors.none,          styles.NONE)
