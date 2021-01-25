@@ -35,6 +35,7 @@ to regenerate all of the colorschemes!
 
 # Screenshots
 
+- Set3 theme with a dark background
 ![Set3 with dark background](./media/set3.png)
-
+- Dark2 theme with a light background
 ![Dark2 with light background](./media/dark2_r.png)
