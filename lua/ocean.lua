@@ -1,13 +1,13 @@
 local Color, colors, Group, groups, styles = require("colorbuddy").setup()
 
-local background = '#3a3a3a'
-local foreground = '#d0d0d0'
+local background = '#333333'
 local grey_0     = '#2b2b2b'
 local grey_1     = '#5c5c5c'
 local grey_2     = '#828282'
 local grey_3     = '#adadad'
 local grey_4     = '#d1d1d1'
 local grey_5     = '#ededed'
+local foreground = grey_5
 
 local theme_0    = "#005020"
 local theme_1    = "#002040"
@@ -18,21 +18,39 @@ local theme_5    = "#42a0c0"
 local theme_6    = "#a2d0e0"
 local theme_fire = "#CF222B"
 
-Color.new('background',    background)
-Color.new('foreground',    foreground)
-Color.new('grey_0',        grey_0)
-Color.new('grey_1',        grey_1)
-Color.new('grey_2',        grey_2)
-Color.new('grey_3',        grey_3)
-Color.new('grey_4',        grey_4)
-Color.new('theme_3',       theme_3)
-Color.new('theme_2',       theme_2)
-Color.new('theme_0',       theme_0)
-Color.new('theme_5',       theme_5)
-Color.new('theme_4',       theme_4)
-Color.new('theme_6',       theme_6)
-Color.new('theme_1',       theme_1)
-Color.new('theme_fire',    theme_fire)
+if vim.g.voodoo_variant == 'light' then
+    Color.new('background',    '#ffffff')-- foreground)
+    Color.new('foreground',    background)
+    Color.new('grey_0',        grey_4)
+    Color.new('grey_1',        grey_3)
+    Color.new('grey_2',        grey_2)
+    Color.new('grey_3',        grey_1)
+    Color.new('grey_4',        grey_0)
+    Color.new('theme_0',       theme_0)
+    Color.new('theme_1',       theme_1)
+    Color.new('theme_2',       theme_2)
+    Color.new('theme_3',       theme_3)
+    Color.new('theme_4',       theme_4)
+    Color.new('theme_5',       theme_5)
+    Color.new('theme_6',       theme_6)
+    Color.new('theme_fire',    theme_fire)
+else
+    Color.new('background',    background)
+    Color.new('foreground',    foreground)
+    Color.new('grey_0',        grey_0)
+    Color.new('grey_1',        grey_1)
+    Color.new('grey_2',        grey_2)
+    Color.new('grey_3',        grey_3)
+    Color.new('grey_4',        grey_4)
+    Color.new('theme_0',       theme_0)
+    Color.new('theme_1',       theme_1)
+    Color.new('theme_2',       theme_2)
+    Color.new('theme_3',       theme_3)
+    Color.new('theme_4',       theme_4)
+    Color.new('theme_5',       theme_5)
+    Color.new('theme_6',       theme_6)
+    Color.new('theme_fire',    theme_fire)
+end
 
 -- Color assignments
 Group.new('Normal',              colors.foreground, colors.background, styles.NONE)
@@ -85,7 +103,7 @@ Group.new('TabLineSelSeparator', colors.theme_5,    colors.none,       styles.no
 Group.new('TabLine',             colors.grey_3,     colors.grey_1,     styles.none)
 Group.new('TabLineSeparator',    colors.grey_1,     colors.none,       styles.none)
 Group.new('TablineFill',         colors.theme_3,    colors.grey_0,     styles.none)
-Group.new('StatusLine',          colors.grey_3,     colors.grey_0,     styles.bold)
+Group.new('StatusLine',          colors.grey_4,     colors.grey_1,     styles.bold)
 Group.new('StatusLineNC',        colors.grey_2,     colors.background, styles.none)
 Group.new('Conceal',             colors.grey_2,     colors.none,       styles.none)
 Group.new('VertSplit',           colors.grey_2,     colors.none,       styles.none)
@@ -153,9 +171,9 @@ Group.new('nvimMap',             groups.vimMap,     colors.none)
 -- Markdown
 Group.new("markdownError",       colors.theme_3,    colors.none)
 -- lua language
-Group.new('luaFunctionCall'      ,                  groups.Function    ,           groups.Function , groups.Function)
+Group.new('luaFunctionCall',     groups.Function,   groups.Function,   groups.Function)
 -- Python
-Group.new('pythonoperator'       ,                  groups.Operator    ,           groups.Operator , styles.none)
+Group.new('pythonoperator',      groups.Operator,   groups.Operator,   styles.none)
 
 --hi! link pythonBuiltin Gruvbox1
 --hi! link pythonBuiltinObj Gruvbox1
