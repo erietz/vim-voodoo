@@ -2,47 +2,34 @@ local Color, colors, Group, groups, styles = require("colorbuddy").setup()
 
 -- ['#ededed', '#d1d1d1', '#adadad', '#828282', '#5c5c5c', '#2b2b2b']
 
-local background     = '#3a3a3a' --'#2b2b2b'
-local foreground     = '#d0d0d0' --"#d1d1d1"
-local voodoo_0       = '#5c5c5c'
-local voodoo_1       = '#828282'
-local voodoo_2       = '#adadad'
-local voodoo_3       = '#d1d1d1'
-local voodoo_4       = '#ededed'
-
--- local voodoo_blue    =  '#4878d0'
--- local voodoo_orange  =  '#ee854a'
--- local voodoo_green   =  '#6acc64'
--- local voodoo_red     =  '#d65f5f'
--- local voodoo_magenta =  '#956cb4'
--- local voodoo_brown   =  '#8c613c'
--- local voodoo_fire    =  '#dc7ec0'
--- local voodoo_grey     = '#797979'
--- local voodoo_yellow  =  '#d5bb67'
--- local voodoo_cyan    =  '#82c6e2'
+local background     = '#3a3a3a'
+local foreground     = '#d0d0d0'
+local voodoo_0       = '#2b2b2b'
+local voodoo_1       = '#5c5c5c'
+local voodoo_2       = '#828282'
+local voodoo_3       = '#adadad'
+local voodoo_4       = '#d1d1d1'
+local voodoo_5       = '#ededed'
 
 local voodoo_blue    =  '#80b1d3'
 local voodoo_orange  =  '#fdb462'
 local voodoo_green   =  '#b3de69'
 local voodoo_red     =  '#fb8072'
 local voodoo_magenta =  '#bebada'
--- local voodoo_brown   =  '#8c613c'
-local voodoo_brown   =  '#8c613c'
 local voodoo_fire    =  '#fccde5'
-local voodoo_grey    = '#797979' --'#d9d9d9'
 local voodoo_yellow  =  '#ffffb3'
 local voodoo_cyan    =  '#8dd3c7'
 
 
 -- Color definitions
 if vim.g.voodoo_variant == 'light' then
-    Color.new('background',     bg_0)
-    Color.new('foreground',     foreground)
-    Color.new('voodoo_0',       bg_1)
-    Color.new('voodoo_1',       bg_2)
-    Color.new('voodoo_2',       bg_3)
-    Color.new('voodoo_3',       bg_4)
-    Color.new('voodoo_4',       bg_5)
+    Color.new('background',     foreground)
+    Color.new('foreground',     background)
+    Color.new('voodoo_0',       voodoo_4)
+    Color.new('voodoo_1',       voodoo_3)
+    Color.new('voodoo_2',       voodoo_2)
+    Color.new('voodoo_3',       voodoo_1)
+    Color.new('voodoo_4',       voodoo_0)
     Color.new('voodoo_red',     voodoo_red)
     Color.new('voodoo_green',   voodoo_green)
     Color.new('voodoo_blue',    voodoo_blue)
@@ -77,7 +64,7 @@ end
 -- Color assignments
 Group.new('Normal',              colors.foreground,           colors.background,    styles.NONE)
 --
-Group.new('Comment',             colors.voodoo_grey,             colors.none,          styles.NONE)
+Group.new('Comment',             colors.voodoo_2,             colors.none,          styles.NONE)
 --
 Group.new("Constant",            colors.voodoo_magenta,       colors.none,          styles.NONE)
 Group.new("String",              colors.voodoo_red,         colors.none,          styles.NONE)
@@ -125,7 +112,7 @@ Group.new('TabLineSelSeparator', colors.voodoo_yellow,        colors.none,      
 Group.new('TabLine',             colors.voodoo_3,             colors.voodoo_1,      styles.none)
 Group.new('TabLineSeparator',    colors.voodoo_1,             colors.none,          styles.none)
 Group.new('TablineFill',         colors.voodoo_red,           colors.voodoo_0,      styles.none)
-Group.new('StatusLine',          colors.voodoo_4,             colors.voodoo_0,      styles.bold)
+Group.new('StatusLine',          colors.voodoo_4,             colors.voodoo_1,      styles.bold)
 Group.new('StatusLineNC',        colors.voodoo_2,             colors.background,    styles.none)
 Group.new('Conceal',             colors.voodoo_2,             colors.none,          styles.none)
 Group.new('VertSplit',           colors.voodoo_2,             colors.none,          styles.none)
@@ -138,7 +125,7 @@ Group.new("LineNr",              colors.voodoo_3,             colors.none,      
 Group.new("CursorLineNr",        colors.voodoo_4,             colors.none,          styles.NONE)
 Group.new("Line",                colors.foreground,           colors.none,          styles.bold)
 Group.new("SignColumn",          colors.none,                 colors.none,          styles.NONE)
-Group.new("ColorColumn",         colors.none,                 colors.voodoo_0,      styles.none)
+Group.new("ColorColumn",         colors.none,                 colors.voodoo_1,      styles.none)
 Group.new("Cursor",              colors.voodoo_0,             colors.voodoo_3,      styles.none)
 Group.new("CursorLine",          colors.none,                 colors.background,    styles.none)
 Group.new("iCursor",             colors.voodoo_0,             colors.voodoo_3,      styles.none)
