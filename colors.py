@@ -2,16 +2,11 @@ import seaborn as sns
 from matplotlib import cm
 
 #print(list(cm.datad.keys()))
-#print(list(cm.cmap_d.keys()))
+#print(list(cm.cmap_d.keys())) # has more options but is depricated and throws warning
 
 styles = list(cm.cmap_d.keys())
 styles = styles + ['hls', 'husl', 'deep', 'muted', 'bright', 'pastel', 'colorblind']
 styles.remove('jet')
-
-#for style in styles:
-#    print(style)
-#    for color in sns.color_palette(style, 7).as_hex():
-#        print(color)
 
 def get_hex(style):
     return sns.color_palette(style, 7).as_hex()
