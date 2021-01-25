@@ -3,7 +3,7 @@ local Color, colors, Group, groups, styles = require("colorbuddy").setup()
 -- ['#ededed', '#d1d1d1', '#adadad', '#828282', '#5c5c5c', '#2b2b2b']
 
 local background     = '#3a3a3a' --'#2b2b2b'
-local foreground     = "#d1d1d1"
+local foreground     = '#d0d0d0' --"#d1d1d1"
 local voodoo_0       = '#5c5c5c'
 local voodoo_1       = '#828282'
 local voodoo_2       = '#adadad'
