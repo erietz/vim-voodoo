@@ -21,8 +21,9 @@ Plug 'erietz/vim-voodoo'
 
 # Adjusting a theme
 
-- If you like a theme but something is a little off, consider the reversed theme
-    - For example: change the theme from `Dark2` to `Dark2_r`
+- If you like a theme but something is a little off, 
+    - Consider the reversed theme (For example: change the theme from `Dark2` to `Dark2_r`)
+    - Set the contrast to `soft` or `hard` using `let g:voodoo_contrast = soft`
 - You can also change the `template.lua` file and run the `colors.py` script
 to regenerate all of the colorschemes!
 
@@ -39,3 +40,5 @@ to regenerate all of the colorschemes!
 ![Set3 with dark background](./media/set3.png)
 - Dark2 theme with a light background
 ![Dark2 with light background](./media/dark2_r.png)
+- Pastel1 theme with a lower contrast
+![Pastel1 theme with a lower contrast](./media/pastel1.png)
