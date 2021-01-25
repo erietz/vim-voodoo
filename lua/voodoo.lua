@@ -2,24 +2,37 @@ local Color, colors, Group, groups, styles = require("colorbuddy").setup()
 
 -- ['#ededed', '#d1d1d1', '#adadad', '#828282', '#5c5c5c', '#2b2b2b']
 
-local background     = '#2b2b2b'
+local background     = '#3a3a3a' --'#2b2b2b'
 local foreground     = "#d1d1d1"
-local voodoo_0       =  '#5c5c5c'
-local voodoo_1       =  '#828282'
-local voodoo_2       =  '#adadad'
-local voodoo_3       =  '#d1d1d1'
+local voodoo_0       = '#5c5c5c'
+local voodoo_1       = '#828282'
+local voodoo_2       = '#adadad'
+local voodoo_3       = '#d1d1d1'
 local voodoo_4       = '#ededed'
 
-local voodoo_blue    =  '#4878d0'
-local voodoo_orange  =  '#ee854a'
-local voodoo_green   =  '#6acc64'
-local voodoo_red     =  '#d65f5f'
-local voodoo_magenta =  '#956cb4'
+-- local voodoo_blue    =  '#4878d0'
+-- local voodoo_orange  =  '#ee854a'
+-- local voodoo_green   =  '#6acc64'
+-- local voodoo_red     =  '#d65f5f'
+-- local voodoo_magenta =  '#956cb4'
+-- local voodoo_brown   =  '#8c613c'
+-- local voodoo_fire    =  '#dc7ec0'
+-- local voodoo_grey     = '#797979'
+-- local voodoo_yellow  =  '#d5bb67'
+-- local voodoo_cyan    =  '#82c6e2'
+
+local voodoo_blue    =  '#80b1d3'
+local voodoo_orange  =  '#fdb462'
+local voodoo_green   =  '#b3de69'
+local voodoo_red     =  '#fb8072'
+local voodoo_magenta =  '#bebada'
+-- local voodoo_brown   =  '#8c613c'
 local voodoo_brown   =  '#8c613c'
-local voodoo_fire    =  '#dc7ec0'
-local voodoo_grey     = '#797979'
-local voodoo_yellow  =  '#d5bb67'
-local voodoo_cyan    =  '#82c6e2'
+local voodoo_fire    =  '#fccde5'
+local voodoo_grey    = '#797979' --'#d9d9d9'
+local voodoo_yellow  =  '#ffffb3'
+local voodoo_cyan    =  '#8dd3c7'
+
 
 -- Color definitions
 if vim.g.voodoo_variant == 'light' then
@@ -73,7 +86,7 @@ Group.new("Number",              colors.voodoo_magenta,       colors.none,      
 Group.new('Boolean',             colors.voodoo_magenta,       colors.none,          styles.NONE)
 Group.new("Float",               colors.voodoo_magenta,       colors.none,          styles.NONE)
 --
-Group.new("Identifier",          colors.voodoo_orange,        colors.none,          styles.NONE)
+Group.new("Identifier",          colors.voodoo_cyan,        colors.none,          styles.NONE)
 Group.new('Function',            colors.voodoo_red,           colors.none,          styles.bold)
 --
 Group.new("Statement",           colors.voodoo_yellow,        colors.none,          styles.NONE)
@@ -90,10 +103,10 @@ Group.new("Define",              colors.voodoo_blue,          colors.none,      
 Group.new("Macro",               colors.voodoo_blue,          colors.none,          styles.NONE)
 Group.new("PreCondit",           colors.voodoo_blue,          colors.none,          styles.NONE)
 --
-Group.new("Type",                colors.voodoo_green:light(), colors.none,          styles.italic)
+Group.new("Type",                colors.voodoo_green, colors.none,          styles.italic)
 Group.new("StorageClass",        colors.voodoo_orange,        colors.none,          styles.NONE)
-Group.new("Structure",           colors.voodoo_orange,        colors.none,          styles.NONE)
-Group.new("Typedef",             colors.voodoo_green:light(), colors.none,          styles.NONE)
+Group.new("Structure",           colors.voodoo_blue,        colors.none,          styles.NONE)
+Group.new("Typedef",             colors.voodoo_green, colors.none,          styles.NONE)
 --
 Group.new("Special",             colors.voodoo_orange,        colors.none,          styles.NONE)
 Group.new("SpecialChar",         colors.voodoo_orange,        colors.none,          styles.NONE)
@@ -102,7 +115,7 @@ Group.new("Delimiter",           colors.voodoo_orange,        colors.none,      
 Group.new("SpecialComment",      colors.voodoo_orange,        colors.none,          styles.NONE)
 Group.new("Debug",               colors.voodoo_orange,        colors.none,          styles.NONE)
 --
-Group.new('Underlined',          colors.voodoo_orange,        colors.none,          styles.bold)
+Group.new('Underlined',          colors.voodoo_cyan,        colors.none,          styles.bold)
 Group.new('Ignore',              colors.voodoo_orange,        colors.none,          styles.bold)
 Group.new('Error',               colors.voodoo_fire,          colors.none,          styles.bold)
 Group.new("Todo",                colors.voodoo_cyan,          colors.none,          styles.NONE)
