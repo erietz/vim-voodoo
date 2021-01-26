@@ -14,7 +14,7 @@ local grey_2     = '#828282'
 local grey_3     = '#adadad'
 local grey_4     = '#d1d1d1'
 local grey_5     = '#ededed'
-local foreground = grey_5
+local foreground = '#E6E1CF' --grey_5
 
 local theme_0    = "#fec287"
 local theme_1    = "#fb8761"
@@ -26,7 +26,7 @@ local theme_6    = "#1c1044"
 local theme_fire = "#CF222B"
 
 if vim.g.voodoo_variant == 'light' then
-    Color.new('background',    '#ffffff')-- foreground)
+    Color.new('background',    foreground)
     Color.new('foreground',    background)
     Color.new('grey_0',        grey_4)
     Color.new('grey_1',        grey_3)
