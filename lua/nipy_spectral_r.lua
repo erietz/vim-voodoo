@@ -111,7 +111,7 @@ Group.new('TabLine',                    colors.grey_3,     colors.grey_1,       
 Group.new('TabLineSeparator',           colors.grey_1,     colors.none,           styles.none)
 Group.new('TablineFill',                colors.theme_3,    colors.grey_0,         styles.none)
 Group.new('StatusLine',                 colors.grey_2,     colors.grey_0,         styles.bold)
-Group.new('StatusLineNC',               colors.grey_0,     colors.background,     styles.none)
+Group.new('StatusLineNC',               colors.grey_1,     colors.background,     styles.none)
 Group.new('Conceal',                    colors.grey_2,     colors.none,           styles.none)
 Group.new('VertSplit',                  colors.grey_2,     colors.none,           styles.none)
 --
