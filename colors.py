@@ -10,7 +10,7 @@ OUT_DIR = ROOT_DIR / 'lua'
 #print(list(cm.cmap_d.keys())) # has more options but is depricated and throws warning
 
 styles = list(cm.cmap_d.keys())
-styles = styles + ['hls', 'husl', 'deep', 'muted', 'bright', 'pastel', 'colorblind']
+styles = styles + ['hls', 'husl', 'deep', 'dark', 'muted', 'bright', 'pastel', 'colorblind']
 styles.remove('jet')
 
 def get_hex(style):
