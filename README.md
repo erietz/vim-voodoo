@@ -7,6 +7,21 @@ schemes with the help of
 There are a total or (185 themes)(light/dark)(normal/soft/hard contast) = 1110
 variants in this repository!
 
+This is a work in progress...
+
+## Rationalizations
+
+- There should be enough contrast such that text is legible
+- There should not be so much contrast that your eyes burn
+- Dark themes are better but sometimes the sun makes it impossible to see your
+  monitor
+- Strings and functions should be differentiable from each other and from
+  everything else
+- If there are too many highlight groups, it makes it difficult distinguish
+  data types. For example:
+  - Floats and numbers should be the same color
+  - Keywords should be the same color
+
 # Installation
 
 Using vim-plug
