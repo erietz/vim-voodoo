@@ -11,13 +11,13 @@ local grey_5      = '#ededed'
 local text_color  = '#E6E1CF'
 local grey_accent = '#333333'
 
-local theme_0    = "#ff20df"
-local theme_1    = "#ff40bf"
-local theme_2    = "#ff609f"
-local theme_3    = "#ff807f"
-local theme_4    = "#ffa05f"
-local theme_5    = "#ffc03f"
-local theme_6    = "#ffe01f"
+local theme_0    = "#001c7f"
+local theme_1    = "#b1400d"
+local theme_2    = "#12711c"
+local theme_3    = "#8c0800"
+local theme_4    = "#591e71"
+local theme_5    = "#592f0d"
+local theme_6    = "#a23582"
 local theme_fire = "#CF222B"
 
 if vim.g.voodoo_variant == 'light' then
