@@ -67,22 +67,25 @@ for style in styles:
 dark_df = pd.DataFrame(dark_data).transpose()
 dark_df = dark_df.rename(columns={i: f'dark_color{i}' for i in dark_df.columns.values})
 visible = (dark_df > 4.5).all(axis='columns')
-dark_df.insert(0, 'contrast_average', dark_df.mean(axis='columns'))
+dark_df.insert(0, 'dark_contrast_average', dark_df.mean(axis='columns'))
 dark_df.insert(0, 'visible_with_dark_background', visible)
 
 with open('dark_ratios.md', 'w') as f:
-    dark_df.sort_values(by='contrast_average', ascending=False).to_markdown(f)
+    dark_df.sort_values(by='dark_contrast_average', ascending=False).to_markdown(f)
 
 light_df = pd.DataFrame(light_data).transpose()
 light_df = light_df.rename(columns={i: f'light_color{i}' for i in light_df.columns.values})
 visible = (light_df > 4.5).all(axis='columns')
-light_df.insert(0, 'contrast_average', light_df.mean(axis='columns'))
+light_df.insert(0, 'light_contrast_average', light_df.mean(axis='columns'))
 light_df.insert(0, 'visible_with_light_background', visible)
 
 with open('light_ratios.md', 'w') as f:
-    light_df.sort_values(by='contrast_average', ascending=False).to_markdown(f)
+    light_df.sort_values(by='light_contrast_average', ascending=False).to_markdown(f)
 
-df = pd.DataFrame([dark_df['visible_with_dark_background'], light_df['visible_with_light_background']]).transpose()
+df = pd.concat([
+    dark_df[['visible_with_dark_background', 'dark_contrast_average']],
+    light_df[['visible_with_light_background', 'light_contrast_average']]
+    ], axis='columns')
 
 df = df.sort_values(by='visible_with_dark_background', ascending=False)
 

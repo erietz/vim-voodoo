@@ -1,187 +1,187 @@
-|                    |   visible_with_dark_background |   visible_with_light_background |
-|:-------------------|-------------------------------:|--------------------------------:|
-| Set3_r             |                              1 |                               0 |
-| Set3               |                              1 |                               0 |
-| Pastel2_r          |                              1 |                               0 |
-| Wistia_r           |                              1 |                               0 |
-| Set2_r             |                              1 |                               0 |
-| Wistia             |                              1 |                               0 |
-| Pastel1            |                              1 |                               0 |
-| Pastel2            |                              1 |                               0 |
-| Set2               |                              1 |                               0 |
-| Pastel1_r          |                              1 |                               0 |
-| pastel             |                              1 |                               0 |
-| husl               |                              1 |                               0 |
-| copper_r           |                              0 |                               0 |
-| coolwarm_r         |                              0 |                               0 |
-| gist_ncar_r        |                              0 |                               0 |
-| gist_heat_r        |                              0 |                               0 |
-| gist_gray_r        |                              0 |                               0 |
-| gist_earth_r       |                              0 |                               0 |
-| YlOrBr_r           |                              0 |                               0 |
-| flag_r             |                              0 |                               1 |
-| cubehelix_r        |                              0 |                               0 |
-| YlOrRd_r           |                              0 |                               0 |
-| afmhot_r           |                              0 |                               0 |
-| autumn_r           |                              0 |                               0 |
-| binary_r           |                              0 |                               0 |
-| YlGnBu_r           |                              0 |                               0 |
-| brg_r              |                              0 |                               0 |
-| bwr_r              |                              0 |                               0 |
-| cool_r             |                              0 |                               0 |
-| bone_r             |                              0 |                               0 |
-| magma              |                              0 |                               0 |
-| YlGn_r             |                              0 |                               0 |
-| gist_stern_r       |                              0 |                               0 |
-| Greys_r            |                              0 |                               0 |
-| OrRd_r             |                              0 |                               0 |
-| Oranges_r          |                              0 |                               0 |
-| PRGn_r             |                              0 |                               0 |
-| PiYG_r             |                              0 |                               0 |
-| PuBu_r             |                              0 |                               0 |
-| PuBuGn_r           |                              0 |                               0 |
-| PuOr_r             |                              0 |                               0 |
-| PuRd_r             |                              0 |                               0 |
-| Purples_r          |                              0 |                               0 |
-| RdBu_r             |                              0 |                               0 |
-| RdGy_r             |                              0 |                               0 |
-| RdPu_r             |                              0 |                               0 |
-| RdYlBu_r           |                              0 |                               0 |
-| RdYlGn_r           |                              0 |                               0 |
-| Reds_r             |                              0 |                               0 |
-| Spectral_r         |                              0 |                               0 |
-| gist_rainbow_r     |                              0 |                               0 |
-| gray_r             |                              0 |                               0 |
-| gist_yarg_r        |                              0 |                               0 |
-| vlag_r             |                              0 |                               0 |
-| tab20c_r           |                              0 |                               0 |
-| rocket             |                              0 |                               0 |
-| rocket_r           |                              0 |                               0 |
-| mako               |                              0 |                               0 |
-| mako_r             |                              0 |                               0 |
-| icefire            |                              0 |                               0 |
-| icefire_r          |                              0 |                               0 |
-| vlag               |                              0 |                               0 |
-| flare              |                              0 |                               0 |
-| tab20_r            |                              0 |                               0 |
-| flare_r            |                              0 |                               0 |
-| crest              |                              0 |                               0 |
-| crest_r            |                              0 |                               0 |
-| hls                |                              0 |                               0 |
-| deep               |                              0 |                               0 |
-| dark               |                              0 |                               1 |
-| muted              |                              0 |                               0 |
-| bright             |                              0 |                               0 |
-| tab20b_r           |                              0 |                               0 |
-| tab10_r            |                              0 |                               0 |
-| gnuplot_r          |                              0 |                               0 |
-| prism_r            |                              0 |                               0 |
-| gnuplot2_r         |                              0 |                               0 |
-| GnBu_r             |                              0 |                               0 |
-| hot_r              |                              0 |                               0 |
-| hsv_r              |                              0 |                               0 |
-| jet_r              |                              0 |                               0 |
-| nipy_spectral_r    |                              0 |                               0 |
-| ocean_r            |                              0 |                               0 |
-| pink_r             |                              0 |                               0 |
-| rainbow_r          |                              0 |                               0 |
-| Set1_r             |                              0 |                               0 |
-| seismic_r          |                              0 |                               0 |
-| spring_r           |                              0 |                               0 |
-| summer_r           |                              0 |                               0 |
-| terrain_r          |                              0 |                               0 |
-| winter_r           |                              0 |                               0 |
-| Accent_r           |                              0 |                               0 |
-| Dark2_r            |                              0 |                               0 |
-| Paired_r           |                              0 |                               0 |
-| Greens_r           |                              0 |                               0 |
-| BuGn_r             |                              0 |                               0 |
-| CMRmap_r           |                              0 |                               0 |
-| copper             |                              0 |                               0 |
-| Purples            |                              0 |                               0 |
-| RdBu               |                              0 |                               0 |
-| RdGy               |                              0 |                               0 |
-| RdPu               |                              0 |                               0 |
-| RdYlBu             |                              0 |                               0 |
-| RdYlGn             |                              0 |                               0 |
-| Reds               |                              0 |                               0 |
-| Spectral           |                              0 |                               0 |
-| YlGn               |                              0 |                               0 |
-| YlGnBu             |                              0 |                               0 |
-| YlOrBr             |                              0 |                               0 |
-| YlOrRd             |                              0 |                               0 |
-| afmhot             |                              0 |                               0 |
-| autumn             |                              0 |                               0 |
-| binary             |                              0 |                               0 |
-| bone               |                              0 |                               0 |
-| brg                |                              0 |                               0 |
-| bwr                |                              0 |                               0 |
-| cool               |                              0 |                               0 |
-| PuRd               |                              0 |                               0 |
-| PuOr               |                              0 |                               0 |
-| PuBuGn             |                              0 |                               0 |
-| BuGn               |                              0 |                               0 |
-| plasma             |                              0 |                               0 |
-| viridis            |                              0 |                               0 |
-| cividis            |                              0 |                               0 |
-| twilight           |                              0 |                               0 |
-| twilight_shifted   |                              0 |                               0 |
-| turbo              |                              0 |                               0 |
-| Blues              |                              0 |                               0 |
-| BrBG               |                              0 |                               0 |
-| BuPu               |                              0 |                               0 |
-| PuBu               |                              0 |                               0 |
-| CMRmap             |                              0 |                               0 |
-| GnBu               |                              0 |                               0 |
-| Greens             |                              0 |                               0 |
-| Greys              |                              0 |                               0 |
-| OrRd               |                              0 |                               0 |
-| Oranges            |                              0 |                               0 |
-| PRGn               |                              0 |                               0 |
-| PiYG               |                              0 |                               0 |
-| coolwarm           |                              0 |                               0 |
-| cubehelix          |                              0 |                               0 |
-| BuPu_r             |                              0 |                               0 |
-| flag               |                              0 |                               0 |
-| Accent             |                              0 |                               0 |
-| Dark2              |                              0 |                               0 |
-| Paired             |                              0 |                               0 |
-| Set1               |                              0 |                               0 |
-| tab10              |                              0 |                               0 |
-| tab20              |                              0 |                               0 |
-| tab20b             |                              0 |                               0 |
-| tab20c             |                              0 |                               0 |
-| magma_r            |                              0 |                               0 |
-| inferno_r          |                              0 |                               0 |
-| plasma_r           |                              0 |                               0 |
-| viridis_r          |                              0 |                               0 |
-| cividis_r          |                              0 |                               0 |
-| twilight_r         |                              0 |                               0 |
-| twilight_shifted_r |                              0 |                               0 |
-| turbo_r            |                              0 |                               0 |
-| Blues_r            |                              0 |                               0 |
-| BrBG_r             |                              0 |                               0 |
-| inferno            |                              0 |                               0 |
-| winter             |                              0 |                               0 |
-| terrain            |                              0 |                               0 |
-| summer             |                              0 |                               0 |
-| gnuplot2           |                              0 |                               0 |
-| gist_earth         |                              0 |                               0 |
-| gist_gray          |                              0 |                               0 |
-| gist_heat          |                              0 |                               0 |
-| gist_ncar          |                              0 |                               0 |
-| gist_rainbow       |                              0 |                               0 |
-| gist_stern         |                              0 |                               0 |
-| gist_yarg          |                              0 |                               0 |
-| gnuplot            |                              0 |                               0 |
-| gray               |                              0 |                               0 |
-| spring             |                              0 |                               0 |
-| hot                |                              0 |                               0 |
-| hsv                |                              0 |                               0 |
-| nipy_spectral      |                              0 |                               0 |
-| ocean              |                              0 |                               0 |
-| pink               |                              0 |                               0 |
-| prism              |                              0 |                               0 |
-| rainbow            |                              0 |                               0 |
-| seismic            |                              0 |                               0 |
-| colorblind         |                              0 |                               0 |
+|                    | visible_with_dark_background   |   dark_contrast_average | visible_with_light_background   |   light_contrast_average |
+|:-------------------|:-------------------------------|------------------------:|:--------------------------------|-------------------------:|
+| Set3_r             | True                           |                 9.49701 | False                           |                  1.42158 |
+| Set3               | True                           |                 8.35457 | False                           |                  1.63281 |
+| Pastel2_r          | True                           |                10.7052  | False                           |                  1.2021  |
+| Wistia_r           | True                           |                 8.91224 | False                           |                  1.50502 |
+| Set2_r             | True                           |                 7.34343 | False                           |                  1.81563 |
+| Wistia             | True                           |                 8.8842  | False                           |                  1.51008 |
+| Pastel1            | True                           |                10.213   | False                           |                  1.27771 |
+| Pastel2            | True                           |                10.7052  | False                           |                  1.2021  |
+| Set2               | True                           |                 7.34343 | False                           |                  1.81563 |
+| Pastel1_r          | True                           |                10.6151  | False                           |                  1.22172 |
+| pastel             | True                           |                 8.20024 | False                           |                  1.5592  |
+| husl               | True                           |                 5.15598 | False                           |                  2.46717 |
+| copper_r           | False                          |                 3.56883 | False                           |                  6.26198 |
+| coolwarm_r         | False                          |                 7.05667 | False                           |                  2.05497 |
+| gist_ncar_r        | False                          |                 6.91279 | False                           |                  2.61374 |
+| gist_heat_r        | False                          |                 3.33492 | False                           |                  7.35414 |
+| gist_gray_r        | False                          |                 4.51872 | False                           |                  5.54731 |
+| gist_earth_r       | False                          |                 4.45126 | False                           |                  3.95605 |
+| YlOrBr_r           | False                          |                 7.0806  | False                           |                  2.69559 |
+| flag_r             | False                          |                 1.11621 | True                            |                 12.9073  |
+| cubehelix_r        | False                          |                 4.58337 | False                           |                  5.23573 |
+| YlOrRd_r           | False                          |                 6.56443 | False                           |                  2.72976 |
+| afmhot_r           | False                          |                 6.5541  | False                           |                  5.16649 |
+| autumn_r           | False                          |                 6.29068 | False                           |                  2.30978 |
+| binary_r           | False                          |                 4.57057 | False                           |                  5.47444 |
+| YlGnBu_r           | False                          |                 6.34131 | False                           |                  3.4923  |
+| brg_r              | False                          |                 2.91229 | False                           |                  5.46666 |
+| bwr_r              | False                          |                 6.81471 | False                           |                  2.54344 |
+| cool_r             | False                          |                 5.25183 | False                           |                  2.67413 |
+| bone_r             | False                          |                 4.43925 | False                           |                  5.90746 |
+| magma              | False                          |                 3.60564 | False                           |                  6.50247 |
+| YlGn_r             | False                          |                 7.23644 | False                           |                  2.62067 |
+| gist_stern_r       | False                          |                 4.68687 | False                           |                  4.13754 |
+| Greys_r            | False                          |                 5.81539 | False                           |                  4.50907 |
+| OrRd_r             | False                          |                 6.59853 | False                           |                  2.78688 |
+| Oranges_r          | False                          |                 6.519   | False                           |                  2.66958 |
+| PRGn_r             | False                          |                 7.1144  | False                           |                  2.68718 |
+| PiYG_r             | False                          |                 8.09358 | False                           |                  2.04465 |
+| PuBu_r             | False                          |                 6.11146 | False                           |                  2.99392 |
+| PuBuGn_r           | False                          |                 6.13598 | False                           |                  2.79663 |
+| PuOr_r             | False                          |                 6.96713 | False                           |                  2.80528 |
+| PuRd_r             | False                          |                 5.29267 | False                           |                  3.45211 |
+| Purples_r          | False                          |                 6.15452 | False                           |                  3.49274 |
+| RdBu_r             | False                          |                 6.97979 | False                           |                  2.61872 |
+| RdGy_r             | False                          |                 6.95256 | False                           |                  2.83459 |
+| RdPu_r             | False                          |                 5.72112 | False                           |                  3.6457  |
+| RdYlBu_r           | False                          |                 7.92181 | False                           |                  2.08839 |
+| RdYlGn_r           | False                          |                 7.84523 | False                           |                  2.02793 |
+| Reds_r             | False                          |                 5.61467 | False                           |                  3.25897 |
+| Spectral_r         | False                          |                 8.05168 | False                           |                  1.97232 |
+| gist_rainbow_r     | False                          |                 7.18573 | False                           |                  2.83668 |
+| gray_r             | False                          |                 4.51872 | False                           |                  5.54731 |
+| gist_yarg_r        | False                          |                 4.57057 | False                           |                  5.47444 |
+| vlag_r             | False                          |                 7.36319 | False                           |                  2.07889 |
+| tab20c_r           | False                          |                 6.29207 | False                           |                  2.37021 |
+| rocket             | False                          |                 3.50785 | False                           |                  6.26963 |
+| rocket_r           | False                          |                 3.46603 | False                           |                  6.33838 |
+| mako               | False                          |                 3.894   | False                           |                  5.8403  |
+| mako_r             | False                          |                 3.85046 | False                           |                  5.9095  |
+| icefire            | False                          |                 2.73546 | False                           |                  7.18613 |
+| icefire_r          | False                          |                 2.73731 | False                           |                  7.18609 |
+| vlag               | False                          |                 7.36085 | False                           |                  2.08129 |
+| flare              | False                          |                 3.21198 | False                           |                  4.91925 |
+| tab20_r            | False                          |                 6.03467 | False                           |                  2.3321  |
+| flare_r            | False                          |                 3.23598 | False                           |                  4.88371 |
+| crest              | False                          |                 3.59692 | False                           |                  4.40952 |
+| crest_r            | False                          |                 3.62272 | False                           |                  4.37584 |
+| hls                | False                          |                 5.8552  | False                           |                  2.55184 |
+| deep               | False                          |                 4.05829 | False                           |                  3.33399 |
+| dark               | False                          |                 1.70385 | True                            |                  8.34764 |
+| muted              | False                          |                 4.41323 | False                           |                  3.18991 |
+| bright             | False                          |                 3.72267 | False                           |                  4.04885 |
+| tab20b_r           | False                          |                 4.2481  | False                           |                  3.82186 |
+| tab10_r            | False                          |                 4.52212 | False                           |                  3.07552 |
+| gnuplot_r          | False                          |                 3.13052 | False                           |                  5.1667  |
+| prism_r            | False                          |                 5.52414 | False                           |                  3.17387 |
+| gnuplot2_r         | False                          |                 4.50447 | False                           |                  5.45255 |
+| GnBu_r             | False                          |                 7.45003 | False                           |                  2.28767 |
+| hot_r              | False                          |                 6.44527 | False                           |                  4.22748 |
+| hsv_r              | False                          |                 7.05489 | False                           |                  2.77987 |
+| jet_r              | False                          |                 7.13684 | False                           |                  2.85187 |
+| nipy_spectral_r    | False                          |                 5.36627 | False                           |                  3.7472  |
+| ocean_r            | False                          |                 2.8799  | False                           |                  8.15786 |
+| pink_r             | False                          |                 7.02319 | False                           |                  2.73572 |
+| rainbow_r          | False                          |                 7.55383 | False                           |                  2.07806 |
+| Set1_r             | False                          |                 5.49611 | False                           |                  3.03985 |
+| seismic_r          | False                          |                 4.62936 | False                           |                  5.09425 |
+| spring_r           | False                          |                 6.572   | False                           |                  2.13261 |
+| summer_r           | False                          |                 6.85105 | False                           |                  2.15862 |
+| terrain_r          | False                          |                 6.89137 | False                           |                  2.40178 |
+| winter_r           | False                          |                 3.95479 | False                           |                  4.32871 |
+| Accent_r           | False                          |                 6.50343 | False                           |                  2.65202 |
+| Dark2_r            | False                          |                 4.24367 | False                           |                  3.18028 |
+| Paired_r           | False                          |                 6.93387 | False                           |                  2.38833 |
+| Greens_r           | False                          |                 6.9984  | False                           |                  2.55502 |
+| BuGn_r             | False                          |                 7.14358 | False                           |                  2.52809 |
+| CMRmap_r           | False                          |                 4.63243 | False                           |                  4.88783 |
+| copper             | False                          |                 3.6037  | False                           |                  6.1902  |
+| Purples            | False                          |                 6.10357 | False                           |                  3.53683 |
+| RdBu               | False                          |                 6.98121 | False                           |                  2.61458 |
+| RdGy               | False                          |                 6.95156 | False                           |                  2.84729 |
+| RdPu               | False                          |                 5.67222 | False                           |                  3.68853 |
+| RdYlBu             | False                          |                 7.9194  | False                           |                  2.08975 |
+| RdYlGn             | False                          |                 7.84987 | False                           |                  2.02246 |
+| Reds               | False                          |                 5.56742 | False                           |                  3.29644 |
+| Spectral           | False                          |                 8.05352 | False                           |                  1.97027 |
+| YlGn               | False                          |                 7.18568 | False                           |                  2.65158 |
+| YlGnBu             | False                          |                 6.28964 | False                           |                  3.53959 |
+| YlOrBr             | False                          |                 7.02995 | False                           |                  2.72748 |
+| YlOrRd             | False                          |                 6.51459 | False                           |                  2.75989 |
+| afmhot             | False                          |                 6.60769 | False                           |                  5.09192 |
+| autumn             | False                          |                 6.32776 | False                           |                  2.29868 |
+| binary             | False                          |                 4.51872 | False                           |                  5.54731 |
+| bone               | False                          |                 4.49077 | False                           |                  5.83272 |
+| brg                | False                          |                 2.94082 | False                           |                  5.43403 |
+| bwr                | False                          |                 6.82321 | False                           |                  2.52721 |
+| cool               | False                          |                 5.22578 | False                           |                  2.68208 |
+| PuRd               | False                          |                 5.2462  | False                           |                  3.49031 |
+| PuOr               | False                          |                 6.96238 | False                           |                  2.83723 |
+| PuBuGn             | False                          |                 6.08781 | False                           |                  2.8267  |
+| BuGn               | False                          |                 7.09343 | False                           |                  2.5587  |
+| plasma             | False                          |                 4.01451 | False                           |                  4.82091 |
+| viridis            | False                          |                 4.30398 | False                           |                  4.38555 |
+| cividis            | False                          |                 4.03568 | False                           |                  4.69457 |
+| twilight           | False                          |                 3.23008 | False                           |                  6.43237 |
+| twilight_shifted   | False                          |                 4.57359 | False                           |                  4.4993  |
+| turbo              | False                          |                 6.80731 | False                           |                  2.4247  |
+| Blues              | False                          |                 6.30181 | False                           |                  3.00717 |
+| BrBG               | False                          |                 7.19096 | False                           |                  2.56098 |
+| BuPu               | False                          |                 5.71182 | False                           |                  3.5573  |
+| PuBu               | False                          |                 6.06261 | False                           |                  3.0285  |
+| CMRmap             | False                          |                 4.68389 | False                           |                  4.81348 |
+| GnBu               | False                          |                 7.40036 | False                           |                  2.31438 |
+| Greens             | False                          |                 6.94858 | False                           |                  2.58567 |
+| Greys              | False                          |                 5.76139 | False                           |                  4.57915 |
+| OrRd               | False                          |                 6.54981 | False                           |                  2.81852 |
+| Oranges            | False                          |                 6.47293 | False                           |                  2.69617 |
+| PRGn               | False                          |                 7.11598 | False                           |                  2.67136 |
+| PiYG               | False                          |                 8.09517 | False                           |                  2.0372  |
+| coolwarm           | False                          |                 7.05638 | False                           |                  2.05514 |
+| cubehelix          | False                          |                 4.63645 | False                           |                  5.16259 |
+| BuPu_r             | False                          |                 5.76271 | False                           |                  3.51244 |
+| flag               | False                          |                 1.88491 | False                           |                  8.08705 |
+| Accent             | False                          |                 6.50343 | False                           |                  2.65202 |
+| Dark2              | False                          |                 4.24367 | False                           |                  3.18028 |
+| Paired             | False                          |                 6.20847 | False                           |                  2.53862 |
+| Set1               | False                          |                 5.07385 | False                           |                  3.33907 |
+| tab10              | False                          |                 3.77264 | False                           |                  3.68189 |
+| tab20              | False                          |                 5.87791 | False                           |                  2.66398 |
+| tab20b             | False                          |                 4.06267 | False                           |                  4.25157 |
+| tab20c             | False                          |                 6.41908 | False                           |                  2.26021 |
+| magma_r            | False                          |                 3.55966 | False                           |                  6.57719 |
+| inferno_r          | False                          |                 3.57824 | False                           |                  6.61396 |
+| plasma_r           | False                          |                 3.97279 | False                           |                  4.8684  |
+| viridis_r          | False                          |                 4.26442 | False                           |                  4.43209 |
+| cividis_r          | False                          |                 3.99674 | False                           |                  4.74199 |
+| twilight_r         | False                          |                 3.23012 | False                           |                  6.43168 |
+| twilight_shifted_r | False                          |                 4.5742  | False                           |                  4.49923 |
+| turbo_r            | False                          |                 6.80637 | False                           |                  2.42756 |
+| Blues_r            | False                          |                 6.35168 | False                           |                  2.97105 |
+| BrBG_r             | False                          |                 7.19045 | False                           |                  2.55866 |
+| inferno            | False                          |                 3.62488 | False                           |                  6.53921 |
+| winter             | False                          |                 3.98888 | False                           |                  4.29978 |
+| terrain            | False                          |                 6.93817 | False                           |                  2.36777 |
+| summer             | False                          |                 6.89173 | False                           |                  2.14532 |
+| gnuplot2           | False                          |                 4.56449 | False                           |                  5.37134 |
+| gist_earth         | False                          |                 4.48948 | False                           |                  3.89769 |
+| gist_gray          | False                          |                 4.57057 | False                           |                  5.47444 |
+| gist_heat          | False                          |                 3.38245 | False                           |                  7.2765  |
+| gist_ncar          | False                          |                 6.9974  | False                           |                  2.49796 |
+| gist_rainbow       | False                          |                 7.15563 | False                           |                  2.83834 |
+| gist_stern         | False                          |                 4.74526 | False                           |                  4.00503 |
+| gist_yarg          | False                          |                 4.51872 | False                           |                  5.54731 |
+| gnuplot            | False                          |                 3.16901 | False                           |                  5.11213 |
+| gray               | False                          |                 4.57057 | False                           |                  5.47444 |
+| spring             | False                          |                 6.60533 | False                           |                  2.12453 |
+| hot                | False                          |                 6.48535 | False                           |                  4.16215 |
+| hsv                | False                          |                 7.08692 | False                           |                  2.79029 |
+| nipy_spectral      | False                          |                 5.38762 | False                           |                  3.76827 |
+| ocean              | False                          |                 2.92028 | False                           |                  8.13364 |
+| pink               | False                          |                 7.07682 | False                           |                  2.69685 |
+| prism              | False                          |                 5.94731 | False                           |                  3.20161 |
+| rainbow            | False                          |                 7.5592  | False                           |                  2.06701 |
+| seismic            | False                          |                 4.63226 | False                           |                  5.06625 |
+| colorblind         | False                          |                 4.89047 | False                           |                  2.88131 |
