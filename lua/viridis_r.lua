@@ -20,23 +20,23 @@ local theme_5    = "#3b518b"
 local theme_6    = "#472c7a"
 local theme_fire = "#CF222B"
 
---if vim.g.voodoo_variant == 'light' then
---    Color.new('grey_accent', grey_accent)
---    Color.new('text_color',  '#37474F')
---    Color.new('grey_0',      '#F1F3F4')
---    Color.new('grey_1',      grey_3)
---    Color.new('grey_2',      grey_2)
---    Color.new('grey_3',      grey_1)
---    Color.new('grey_4',      grey_0)
---    Color.new('theme_0',     theme_0)
---    Color.new('theme_1',     theme_1)
---    Color.new('theme_2',     theme_2)
---    Color.new('theme_3',     theme_3)
---    Color.new('theme_4',     theme_4)
---    Color.new('theme_5',     theme_5)
---    Color.new('theme_6',     theme_6)
---    Color.new('theme_fire',  theme_fire)
---else
+if vim.g.voodoo_variant == 'light' then
+    Color.new('grey_accent', grey_accent)
+    Color.new('text_color',  '#37474F')
+    Color.new('grey_0',      '#F1F3F4')
+    Color.new('grey_1',      grey_3)
+    Color.new('grey_2',      grey_2)
+    Color.new('grey_3',      grey_1)
+    Color.new('grey_4',      grey_0)
+    Color.new('theme_0',     theme_0)
+    Color.new('theme_1',     theme_1)
+    Color.new('theme_2',     theme_2)
+    Color.new('theme_3',     theme_3)
+    Color.new('theme_4',     theme_4)
+    Color.new('theme_5',     theme_5)
+    Color.new('theme_6',     theme_6)
+    Color.new('theme_fire',  theme_fire)
+else
     Color.new('grey_accent', grey_accent)
     Color.new('text_color',  text_color)
     Color.new('grey_0',      grey_0)
@@ -52,7 +52,7 @@ local theme_fire = "#CF222B"
     Color.new('theme_5',     theme_5)
     Color.new('theme_6',     theme_6)
     Color.new('theme_fire',  theme_fire)
---end
+end
 
 -- Color assignments
 Group.new('Normal',                     colors.text_color, colors.grey_0,      styles.NONE)

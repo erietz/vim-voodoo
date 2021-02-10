@@ -55,6 +55,7 @@ dark_data = {}
 light_data = {}
 for style in styles:
     palette_rgb = get_rgb(style)
+    palette_rgb = [sRGB_to_Linear(i) for i in palette_rgb]
     palette_luminance = [linear_RGB_to_luminance(i) for i in palette_rgb]
     
     dark_contrast_ratios = [contrast_ratio(i, dark_background) for i in palette_luminance]
