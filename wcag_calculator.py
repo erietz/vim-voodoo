@@ -49,20 +49,33 @@ def hextofloats(h):
     return tuple(int(h[i:i + 2], 16) / 255. for i in (1, 3, 5)) # skip '#'
 
 dark_background =  linear_RGB_to_luminance(sRGB_to_Linear(hextofloats('#2b2b2b')))
-data = {}
+light_background =  linear_RGB_to_luminance(sRGB_to_Linear(hextofloats('#F1F3F4')))
+
+dark_data = {}
+light_data = {}
 for style in styles:
     palette_rgb = get_rgb(style)
     palette_luminance = [linear_RGB_to_luminance(i) for i in palette_rgb]
     
-    contrast_ratios = [contrast_ratio(i, dark_background) for i in palette_luminance]
-    data[style] = contrast_ratios
+    dark_contrast_ratios = [contrast_ratio(i, dark_background) for i in palette_luminance]
+    light_contrast_ratios = [contrast_ratio(light_background, i) for i in palette_luminance]
 
-df = pd.DataFrame(data).transpose()
+    dark_data[style] = dark_contrast_ratios
+    light_data[style] = light_contrast_ratios
 
-visible = (df > 4.5).all(axis='columns')
-df.insert(0, 'visible_with_dark_background', visible)
+dark_df = pd.DataFrame(dark_data).transpose()
+dark_df = dark_df.rename(columns={i: f'dark_color{i}' for i in dark_df.columns.values})
+visible = (dark_df > 4.5).all(axis='columns')
+dark_df.insert(0, 'visible_with_dark_background', visible)
 
-with open('dark_background_contrast_table.md', 'w') as f:
+light_df = pd.DataFrame(light_data).transpose()
+light_df = light_df.rename(columns={i: f'light_color{i}' for i in light_df.columns.values})
+visible = (light_df > 4.5).all(axis='columns')
+light_df.insert(0, 'visible_with_light_background', visible)
+
+df = pd.concat([dark_df, light_df], axis='columns')
+
+with open('contrast_ratio_table.md', 'w') as f:
     df.to_markdown(f)
 
 print(df)
