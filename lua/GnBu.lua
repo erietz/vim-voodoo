@@ -2,7 +2,16 @@
 
 local Color, colors, Group, groups, styles = require("colorbuddy").setup()
 
-local grey_0      = '#2b2b2b'
+local grey_0
+
+if vim.g.voodoo_background == 'hard' then
+    grey_0 = '#0F1419'
+elseif vim.g.voodoo_background == 'soft' then
+    grey_0 = '#3a3a3a'
+else
+    grey_0 = '#2b2b2b'
+end
+
 local grey_1      = '#5c5c5c'
 local grey_2      = '#828282'
 local grey_3      = '#adadad'
