@@ -14,7 +14,7 @@ with open('python/all_styles.json', 'r') as f:
 def fill_template(template, hex_list, style):
     for i in range(7):
         template = template.replace(f'placeholder_{i}', f'"{hex_list[i]}"')
-        template = template.replace('placeholder_theme_name', f'{style}')
+        template = template.replace('placeholder_theme_name', r'{colors_name}')
     return template
 
 def generate_all_files(template_file, out_dir, extension):
