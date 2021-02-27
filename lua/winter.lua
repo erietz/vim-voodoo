@@ -1,12 +1,23 @@
 -- TODO: make sure everything is defined that is defined in  colorbuddy.nvim/lua/colorbuddy/plugins/init.lua
 
+
+local function get_var(my_var_name, default_value)
+  s, v = pcall(function()
+    return vim.api.nvim_get_var(my_var_name)
+  end)
+  if s then return v else return default_value end
+end
+
+local background = get_var('g:voodoo_background', nil)
+local variant = get_var('g:voodoo_variant', nil)
+
 local Color, colors, Group, groups, styles = require("colorbuddy").setup()
 
 local grey_0
 
-if vim.g.voodoo_background == 'hard' then
+if background == 'hard' then
     grey_0 = '#0F1419'
-elseif vim.g.voodoo_background == 'soft' then
+elseif background == 'soft' then
     grey_0 = '#3a3a3a'
 else
     grey_0 = '#2b2b2b'
@@ -29,7 +40,7 @@ local theme_5    = "#00c09f"
 local theme_6    = "#00e08f"
 local theme_fire = "#CF222B"
 
-if vim.g.voodoo_variant == 'light' then
+if variant == 'light' then
     Color.new('grey_accent', grey_accent)
     Color.new('text_color',  '#37474F')
     Color.new('grey_0',      '#F1F3F4')
