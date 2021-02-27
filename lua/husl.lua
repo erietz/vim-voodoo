@@ -12,13 +12,13 @@ else
     grey_0 = '#2b2b2b'
 end
 
-local grey_1      = '#5c5c5c'
-local grey_2      = '#828282'
-local grey_3      = '#adadad'
-local grey_4      = '#d1d1d1'
-local grey_5      = '#ededed'
-local text_color  = '#E6E1CF'
-local grey_accent = '#333333'
+local grey_1      = "#5c5c5c"
+local grey_2      = "#828282"
+local grey_3      = "#adadad"
+local grey_4      = "#d1d1d1"
+local grey_5      = "#ededed"
+local text_color  = "#E6E1CF"
+local grey_accent = "#333333"
 
 local theme_0    = "#f77189"
 local theme_1    = "#c69432"
@@ -116,7 +116,7 @@ Group.new('TabLineSeparator',           colors.grey_1,     colors.none,        s
 Group.new('TablineFill',                colors.theme_3,    colors.grey_0,      styles.none)
 Group.new('StatusLine',                 colors.grey_3,     colors.grey_accent, styles.none)
 Group.new('StatusLineNC',               colors.grey_1,     colors.grey_accent, styles.none)
-Group.new('Conceal',                    colors.grey_2,     colors.none,        styles.none)
+Group.new('Conceal',                    colors.grey_0,     colors.grey_4,        styles.none)
 Group.new('VertSplit',                  colors.grey_2,     colors.none,        styles.none)
 --
 Group.new('ErrorMsg',                   colors.grey_0,     colors.theme_fire,  styles.bold)
@@ -126,7 +126,7 @@ Group.new("CursorColumn",               colors.none,       colors.grey_accent, s
 Group.new("LineNr",                     colors.grey_2,     colors.grey_accent, styles.NONE)
 Group.new("CursorLineNr",               colors.grey_3,     colors.grey_accent, styles.NONE)
 Group.new("Line",                       colors.text_color, colors.none,        styles.bold)
-Group.new("SignColumn",                 colors.none,       colors.none,        styles.NONE)
+Group.new("SignColumn",                 colors.theme_fire,       colors.grey_1,        styles.NONE)
 Group.new("ColorColumn",                colors.none,       colors.grey_accent, styles.none)
 Group.new("Cursor",                     colors.grey_0,     colors.grey_3,      styles.none)
 Group.new("CursorLine",                 colors.none,       colors.grey_0,      styles.none)
