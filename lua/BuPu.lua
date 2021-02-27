@@ -140,7 +140,7 @@ Group.new("Line",                       colors.text_color, colors.none,        s
 Group.new("SignColumn",                 colors.theme_fire,       colors.grey_1,        styles.NONE)
 Group.new("ColorColumn",                colors.none,       colors.grey_accent, styles.none)
 Group.new("Cursor",                     colors.grey_0,     colors.grey_3,      styles.none)
-Group.new("CursorLine",                 colors.none,       colors.grey_0,      styles.none)
+Group.new("CursorLine",                 colors.none,       colors.grey_accent,      styles.none)
 Group.new("iCursor",                    colors.grey_0,     colors.grey_3,      styles.none)
 Group.new("EndOfBuffer",                colors.none,       colors.none,        styles.none)
 Group.new("MatchParen",                 colors.none,       colors.grey_2,      styles.none)
