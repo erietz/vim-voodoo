@@ -137,7 +137,7 @@ Group.new("CursorColumn",               colors.none,       colors.grey_accent, s
 Group.new("LineNr",                     colors.grey_2,     colors.grey_accent, styles.NONE)
 Group.new("CursorLineNr",               colors.grey_3,     colors.grey_accent, styles.NONE)
 Group.new("Line",                       colors.text_color, colors.none,        styles.bold)
-Group.new("SignColumn",                 colors.theme_fire,       colors.grey_1,        styles.NONE)
+Group.new("SignColumn",                 colors.theme_fire, colors.grey_0,        styles.NONE)
 Group.new("ColorColumn",                colors.none,       colors.grey_accent, styles.none)
 Group.new("Cursor",                     colors.grey_0,     colors.grey_3,      styles.none)
 Group.new("CursorLine",                 colors.none,       colors.grey_accent,      styles.none)
