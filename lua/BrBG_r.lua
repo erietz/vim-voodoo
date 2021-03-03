@@ -157,7 +157,7 @@ Group.new("SpellBad",                   groups.String,     colors.none,        s
 Group.new("SpellCap",                   colors.theme_fire, colors.grey_0,      styles.none)
 Group.new("SpellLocal",                 colors.grey_4,     colors.grey_0,      styles.none)
 Group.new("SpellRare",                  colors.grey_4,     colors.grey_0,      styles.none)
-Group.new("Visual",                     colors.grey_0,     colors.theme_5,     styles.none)
+Group.new("Visual",                     colors.grey_0,     colors.theme_2,     styles.none)
 Group.new("VisualNOS",                  colors.grey_0,     colors.text_color,  styles.none)
 Group.new("Whitespace",                 colors.grey_2,     colors.grey_0,      styles.none)
 Group.new("Folded",                     colors.grey_0,     colors.grey_3,      styles.none)
@@ -233,6 +233,11 @@ Group.new('pythonoperator',             groups.Operator,   groups.Operator,    s
 --hi! link pythonConditional Gruvbox3
 --hi! link pythonRepeat Gruvbox3
 --hi! link pythonDottedName Gruvbox2Bold
+
+-- Telescope
+Group.new("TelescopeMatching"       , colors.theme_2 , colors.grey_0 , styles.bold)
+Group.new("TelescopeSelectionCaret" , colors.theme_2 , colors.grey_0 , styles.bold)
+Group.new("TelescopePromptPrefix"   , colors.theme_2 , colors.grey_0 , styles.bold)
 
 -- Terminal
 vim.api.nvim_set_var('terminal_color_0',  theme_2)
