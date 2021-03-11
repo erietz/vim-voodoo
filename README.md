@@ -61,7 +61,7 @@ to regenerate all of the colorschemes.
 - Pastel2 theme with a lower contrast
 ![Pastel2 theme with a lower contrast](./media/pastel2.png)
 - Dark2 theme with a light background (who uses a light background?)
-![Dark2 with light background](./media/dark2.png)
+![Dark2 with light background](./media/dark2_light.png)
 
 # Contrast ratios
 
