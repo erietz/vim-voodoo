@@ -54,12 +54,14 @@ to regenerate all of the colorschemes.
 
 # Screenshots
 
-- Set3 theme with a dark background
+- Set3 theme (my personal favorite)
 ![Set3 with dark background](./media/set3.png)
-- Dark2 theme with a light background
-![Dark2 with light background](./media/dark2_r.png)
-- Pastel1 theme with a lower contrast
-![Pastel1 theme with a lower contrast](./media/pastel1.png)
+- husl theme
+![husl](./media/husl.png)
+- Pastel2 theme with a lower contrast
+![Pastel2 theme with a lower contrast](./media/pastel2.png)
+- Dark2 theme with a light background (who uses a light background?)
+![Dark2 with light background](./media/dark2.png)
 
 # Contrast ratios
 
