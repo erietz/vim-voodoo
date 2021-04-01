@@ -14,7 +14,7 @@ with open(ROOT_DIR / 'python/all_styles.json', 'r') as f:
 def fill_template(template, hex_list, style):
     for i in range(7):
         template = template.replace(f'placeholder_{i}', f'"{hex_list[i]}"')
-        template = template.replace('placeholder_style_name', f'{style}')
+    template = template.replace('placeholder_style_name', f'{style}')
     return template
 
 def generate_all_files(template_file, out_dir, extension):
@@ -33,3 +33,10 @@ LIGHTLINE_TEMPLATE = ROOT_DIR / 'autoload/lightline/template.vim'
 
 generate_all_files(LIGHTLINE_TEMPLATE, LIGHTLINE_DIR, 'vim')
 print('all lightline themes converted')
+
+
+COLORS_DIR = ROOT_DIR / 'colors/'
+COLORS_TEMPLATE = ROOT_DIR / 'colors/template.vim'
+
+generate_all_files(COLORS_TEMPLATE, COLORS_DIR, 'vim')
+print('all vim color aliases converted')
