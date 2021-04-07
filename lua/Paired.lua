@@ -235,14 +235,14 @@ Group.new('pythonoperator',             groups.Operator,   groups.Operator,    s
 --hi! link pythonDottedName Gruvbox2Bold
 
 -- Telescope
-Group.new("TelescopeMatching"       , colors.theme_2    , colors.grey_0 , styles.bold)
+Group.new("TelescopeMatching"       , colors.theme_2    , colors.none , styles.bold)
 Group.new("TelescopeSelection"      , colors.text_color , colors.grey_1 , styles.bold)
-Group.new("TelescopeSelectionCaret" , colors.theme_2    , colors.grey_0 , styles.bold)
-Group.new("TelescopePromptPrefix"   , colors.theme_2    , colors.grey_0 , styles.bold)
-Group.new("TelescopeBorder"         , colors.theme_0    , colors.grey_0 , styles.bold)
-Group.new("TelescopePromptBorder"   , colors.theme_1    , colors.grey_0 , styles.bold)
-Group.new("TelescopeResultsBorder"  , colors.theme_3    , colors.grey_0 , styles.bold)
-Group.new("TelescopePreviewBorder"  , colors.theme_4    , colors.grey_0 , styles.bold)
+Group.new("TelescopeSelectionCaret" , colors.theme_2    , colors.none , styles.bold)
+Group.new("TelescopePromptPrefix"   , colors.theme_2    , colors.none , styles.bold)
+Group.new("TelescopeBorder"         , colors.theme_0    , colors.none , styles.bold)
+Group.new("TelescopePromptBorder"   , colors.theme_1    , colors.none , styles.bold)
+Group.new("TelescopeResultsBorder"  , colors.theme_3    , colors.none , styles.bold)
+Group.new("TelescopePreviewBorder"  , colors.theme_4    , colors.none , styles.bold)
 
 -- Terminal
 vim.api.nvim_set_var('terminal_color_0',  theme_2)
