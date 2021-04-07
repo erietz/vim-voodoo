@@ -160,7 +160,7 @@ Group.new("SpellRare",                  colors.grey_4,     colors.grey_0,      s
 Group.new("Visual",                     colors.grey_0,     colors.theme_2,     styles.none)
 Group.new("VisualNOS",                  colors.grey_0,     colors.text_color,  styles.none)
 Group.new("Whitespace",                 colors.grey_2,     colors.grey_0,      styles.none)
-Group.new("Folded",                     colors.grey_0,     colors.grey_3,      styles.none)
+Group.new("Folded",                     colors.grey_0,     colors.grey_1,      styles.none)
 -- Git gutters and diffs
 Group.new('DiffAdd',                    colors.theme_2,    colors.grey_0,      styles.none)
 Group.new('DiffChange',                 colors.theme_5,    colors.grey_0,      styles.none)
@@ -235,9 +235,14 @@ Group.new('pythonoperator',             groups.Operator,   groups.Operator,    s
 --hi! link pythonDottedName Gruvbox2Bold
 
 -- Telescope
-Group.new("TelescopeMatching"       , colors.theme_2 , colors.grey_0 , styles.bold)
-Group.new("TelescopeSelectionCaret" , colors.theme_2 , colors.grey_0 , styles.bold)
-Group.new("TelescopePromptPrefix"   , colors.theme_2 , colors.grey_0 , styles.bold)
+Group.new("TelescopeMatching"       , colors.theme_2    , colors.grey_0 , styles.bold)
+Group.new("TelescopeSelection"      , colors.text_color , colors.grey_1 , styles.bold)
+Group.new("TelescopeSelectionCaret" , colors.theme_2    , colors.grey_0 , styles.bold)
+Group.new("TelescopePromptPrefix"   , colors.theme_2    , colors.grey_0 , styles.bold)
+Group.new("TelescopeBorder"         , colors.theme_0    , colors.grey_0 , styles.bold)
+Group.new("TelescopePromptBorder"   , colors.theme_1    , colors.grey_0 , styles.bold)
+Group.new("TelescopeResultsBorder"  , colors.theme_3    , colors.grey_0 , styles.bold)
+Group.new("TelescopePreviewBorder"  , colors.theme_4    , colors.grey_0 , styles.bold)
 
 -- Terminal
 vim.api.nvim_set_var('terminal_color_0',  theme_2)
