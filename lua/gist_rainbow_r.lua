@@ -1,6 +1,3 @@
--- TODO: make sure everything is defined that is defined in  colorbuddy.nvim/lua/colorbuddy/plugins/init.lua
-
-
 local function get_var(my_var_name, default_value)
   s, v = pcall(function()
     return vim.api.nvim_get_var(my_var_name)
@@ -20,7 +17,7 @@ if background == 'hard' then
 elseif background == 'soft' then
     grey_0 = '#3a3a3a'
 else
-    grey_0 = '#2b2b2b'
+    grey_0 = '#222D31'
 end
 
 local grey_1      = '#5c5c5c'
@@ -28,8 +25,8 @@ local grey_2      = '#828282'
 local grey_3      = '#adadad'
 local grey_4      = '#d1d1d1'
 local grey_5      = '#ededed'
-local text_color  = '#E6E1CF'
-local grey_accent = '#333333'
+local text_color  = '#d8d8d8'
+local grey_accent = '#373b41'
 
 local theme_0    = "#9100ff"
 local theme_1    = "#001dff"
@@ -134,8 +131,8 @@ Group.new('ErrorMsg',                   colors.grey_0,     colors.theme_fire,  s
 Group.new('WarningMsg',                 colors.grey_4,     colors.grey_2,      styles.bold)
 Group.new("Title",                      colors.grey_3,     colors.none,        styles.none)
 Group.new("CursorColumn",               colors.none,       colors.grey_accent, styles.NONE)
-Group.new("LineNr",                     colors.grey_2,     colors.grey_accent, styles.NONE)
-Group.new("CursorLineNr",               colors.grey_3,     colors.grey_accent, styles.NONE)
+Group.new("LineNr",                     colors.grey_2,     colors.grey_0, styles.NONE)
+Group.new("CursorLineNr",               colors.theme_2,     colors.grey_accent, styles.NONE)
 Group.new("Line",                       colors.text_color, colors.none,        styles.bold)
 Group.new("SignColumn",                 colors.theme_fire, colors.grey_0,        styles.NONE)
 Group.new("ColorColumn",                colors.none,       colors.grey_accent, styles.none)
