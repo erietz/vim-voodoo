@@ -70,7 +70,7 @@ else
     Color.new('theme_fire',  theme_fire)
 end
 
--- Color assignments
+--                                      Color              assignments
 Group.new('Normal',                     colors.text_color, colors.grey_0,      styles.NONE)
 --
 Group.new('Comment',                    colors.grey_2,     colors.none,        styles.NONE)
@@ -116,7 +116,7 @@ Group.new('Ignore',                     colors.theme_1,    colors.none,        s
 Group.new('Error',                      colors.theme_fire, colors.none,        styles.bold)
 Group.new("Todo",                       colors.theme_6,    colors.none,        styles.NONE)
 --
-Group.new('TabLineSel',                 colors.grey_4,     colors.grey_0,      styles.bold )
+Group.new('TabLineSel',                 colors.grey_4,     colors.grey_0,      styles.bold  )
 Group.new('TabLineSelSeparator',        colors.theme_5,    colors.none,        styles.none)
 Group.new('TabLine',                    colors.grey_3,     colors.grey_1,      styles.none)
 Group.new('TabLineSeparator',           colors.grey_1,     colors.none,        styles.none)
@@ -156,26 +156,26 @@ Group.new("SpellRare",                  colors.grey_4,     colors.grey_0,      s
 Group.new("Visual",                     colors.grey_0,     colors.theme_2,     styles.none)
 Group.new("VisualNOS",                  colors.grey_0,     colors.text_color,  styles.none)
 Group.new("Whitespace",                 colors.grey_2,     colors.grey_0,      styles.none)
-Group.new("Folded",                     colors.grey_2,     colors.grey_accent,      styles.none)
--- Git gutters and diffs
+Group.new("Folded",                     colors.grey_2,     colors.grey_accent, styles.none)
+--                                      Git                gutters             and          diffs
 Group.new('DiffAdd',                    colors.grey_0,     colors.theme_2,     styles.none)
 Group.new('DiffChange',                 colors.grey_0,     colors.theme_5,     styles.none)
 Group.new('DiffDelete',                 colors.grey_0,     colors.theme_fire,  styles.none)
 Group.new('DiffText',                   colors.grey_0,     colors.text_color,  styles.none)
--- COC
+--                                      COC
 Group.new('CocErrorHighlight',          colors.none,       colors.grey_1,      styles.underline)
--- FZF
+--                                      FZF
 Group.new('fzf1',                       colors.grey_4,     colors.grey_0,      styles.none)
 Group.new('fzf2',                       colors.grey_4,     colors.grey_0,      styles.none)
 Group.new('fzf3',                       colors.grey_4,     colors.grey_0,      styles.none)
--- "+- Neovim Support -+
+--                                      "+-                Neovim              Support      -+
 Group.new("healthError",                colors.theme_1,    colors.theme_fire,  styles.none)
 Group.new("healthSuccess",              colors.theme_1,    colors.theme_fire,  styles.none)
 Group.new("healthWarning",              colors.theme_fire, colors.theme_fire,  styles.none)
 Group.new("TermCursorNC",               colors.grey_0,     colors.theme_fire,  styles.none)
 Group.new("IncSearch",                  colors.grey_4,     colors.theme_fire,  styles.underline)
 Group.new("Search",                     colors.grey_0,     colors.theme_fire,  styles.none)
--- vim language highlighting
+--                                      vim                language            highlighting
 Group.new('vimcommand',                 groups.Statement,  colors.none)
 Group.new('vimLet',                     groups.vimcommand, colors.none)
 Group.new('vimFuncVar',                 groups.identifier, colors.none)
@@ -190,7 +190,7 @@ Group.new('vimBracket',                 groups.Delimiter,  colors.none)
 Group.new('vimMap',                     groups.vimcommand, colors.none)
 Group.new('vimNotFunc',                 groups.vimcommand, colors.none)
 Group.new('nvimMap',                    groups.vimMap,     colors.none)
--- markdown
+--                                      markdown
 Group.new("markdownH1",                 colors.theme_1,    colors.none,        styles.bold)
 Group.new("markdownH2",                 colors.theme_2,    colors.none,        styles.bold)
 Group.new("markdownH3",                 colors.theme_3,    colors.none,        styles.bold)
@@ -200,19 +200,20 @@ Group.new("markdownH6",                 colors.theme_6,    colors.none,        s
 Group.new("markdownRule",               groups.markdownH2, colors.none,        styles.bold)
 Group.new("markdownItalic",             colors.theme_0,    colors.none,        styles.italic)
 Group.new("markdownBold",               colors.theme_0,    colors.none,        styles.bold)
-Group.new("markdownBoldItalic",         colors.theme_0,    colors.none,        styles.bold + styles.italic)
+Group.new("markdownBoldItalic",         colors.theme_0,    colors.none,        styles.bold  +  styles.italic)
 Group.new("markdownCodeDelimiter",      colors.theme_0,    colors.none,        styles.bold)
 Group.new("markdownCode",               colors.theme_0,    colors.none,        styles.none)
 Group.new("markdownCodeBlock",          colors.theme_0,    colors.none,        styles.none)
 Group.new("markdownFootnoteDefinition", colors.theme_0,    colors.none,        styles.italic)
 Group.new("markdownListMarker",         colors.theme_0,    colors.none,        styles.bold)
 Group.new("markdownLineBreak",          colors.theme_0,    colors.none,        styles.underline)
--- lua language
+--                                      lua                language
 Group.new('luaFunctionCall',            groups.Function,   groups.Function,    groups.Function)
--- Python
+--                                      Python
 Group.new('pythonoperator',             groups.Operator,   groups.Operator,    styles.none)
-Group.new('TSVariableBuiltin',          groups.Statement,   groups.Statement,    styles.none) -- self
-Group.new('TSMethod',                   groups.Function,    groups.Function,    styles.none)
+Group.new('TSVariableBuiltin',          groups.Statement,  groups.Statement,   styles.none) -- self
+Group.new('TSMethod',                   groups.Function,   groups.Function,    styles.none)
+Group.new('TSConstant',                 groups.Constant,   groups.Constant,    styles.none)
 
 -- Telescope
 Group.new("TelescopeMatching"       , colors.theme_2    , colors.none , styles.bold)
