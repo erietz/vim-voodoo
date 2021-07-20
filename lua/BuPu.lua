@@ -11,7 +11,6 @@ local variant = get_var('g:voodoo_variant', nil)
 local Color, colors, Group, groups, styles = require("colorbuddy").setup()
 
 local grey_0
-
 if background == 'hard' then
     grey_0 = '#0F1419'
 elseif background == 'soft' then
@@ -90,7 +89,7 @@ Group.new("Statement",                  colors.theme_5,    colors.none,        s
 Group.new("Conditional",                colors.theme_5,    colors.none,        styles.NONE)
 Group.new("Repeat",                     colors.theme_5,    colors.none,        styles.NONE)
 Group.new("Label",                      colors.theme_5,    colors.none,        styles.italic)
-Group.new("Operator",                   colors.theme_6,    colors.none,        styles.NONE)
+Group.new("Operator",                   colors.none,       colors.none,        styles.NONE)
 Group.new("Keyword",                    colors.theme_5,    colors.none,        styles.italic)
 Group.new("Exception",                  colors.theme_5,    colors.none,        styles.NONE)
 --
@@ -214,24 +213,6 @@ Group.new('luaFunctionCall',            groups.Function,   groups.Function,    g
 Group.new('pythonoperator',             groups.Operator,   groups.Operator,    styles.none)
 Group.new('TSVariableBuiltin',          groups.Statement,   groups.Statement,    styles.none) -- self
 Group.new('TSMethod',                   groups.Function,    groups.Function,    styles.none)
-
---hi! link pythonBuiltin Gruvbox1
---hi! link pythonBuiltinObj Gruvbox1
---hi! link pythonBuiltinFunc Gruvbox1
---hi! link pythonFunction GruvboxAqua
---hi! link pythonDecorator Gruvbox3
---hi! link pythonInclude Gruvbox0
---hi! link pythonImport Gruvbox0
---hi! link pythonRun Gruvbox0
---hi! link pythonCoding Gruvbox0
---hi! link pythonOperator Gruvbox3
---hi! link pythonException Gruvbox3
---hi! link pythonExceptions GruvboxPurple
---hi! link pythonBoolean GruvboxPurple
---hi! link pythonDot GruvboxFg3
---hi! link pythonConditional Gruvbox3
---hi! link pythonRepeat Gruvbox3
---hi! link pythonDottedName Gruvbox2Bold
 
 -- Telescope
 Group.new("TelescopeMatching"       , colors.theme_2    , colors.none , styles.bold)

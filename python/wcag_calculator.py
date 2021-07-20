@@ -50,7 +50,7 @@ for style in styles:
     palette_luminance = [
         linear_RGB_to_luminance(sRGB_to_Linear(i)) for i in palette_rgb
     ]
-    
+
     hard_contrast_ratios = [contrast_ratio(i, hard_background) for i in palette_luminance]
     soft_contrast_ratios = [contrast_ratio(i, soft_background) for i in palette_luminance]
     normal_contrast_ratios = [contrast_ratio(i, normal_background) for i in palette_luminance]
@@ -87,6 +87,3 @@ with open('tables/contrast_ratio_table.md', 'w') as f:
     df.to_markdown(f)
 
 print(df)
-
-
-
