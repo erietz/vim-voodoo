@@ -83,7 +83,7 @@ Group.new("Number",                     colors.theme_4,    colors.none,        s
 Group.new('Boolean',                    colors.theme_4,    colors.none,        styles.NONE)
 Group.new("Float",                      colors.theme_4,    colors.none,        styles.NONE)
 --
-Group.new("Identifier",                 colors.theme_2,    colors.none,        styles.NONE)
+Group.new("Identifier",                 colors.theme_6,    colors.none,        styles.NONE)
 Group.new('Function',                   colors.theme_3,    colors.none,        styles.NONE)
 --
 Group.new("Statement",                  colors.theme_5,    colors.none,        styles.NONE)
@@ -101,8 +101,8 @@ Group.new("Macro",                      colors.theme_1,    colors.none,        s
 Group.new("PreCondit",                  colors.theme_1,    colors.none,        styles.NONE)
 --
 Group.new("Type",                       colors.theme_2,    colors.none,        styles.italic)
-Group.new("StorageClass",               colors.theme_1,    colors.none,        styles.NONE)
-Group.new("Structure",                  colors.theme_1,    colors.none,        styles.NONE)
+Group.new("StorageClass",               colors.theme_2,    colors.none,        styles.NONE)
+Group.new("Structure",                  colors.theme_2,    colors.none,        styles.NONE)
 Group.new("Typedef",                    colors.theme_2,    colors.none,        styles.NONE)
 --
 Group.new("Special",                    colors.theme_1,    colors.none,        styles.NONE)
@@ -157,7 +157,7 @@ Group.new("SpellRare",                  colors.grey_4,     colors.grey_0,      s
 Group.new("Visual",                     colors.grey_0,     colors.theme_2,     styles.none)
 Group.new("VisualNOS",                  colors.grey_0,     colors.text_color,  styles.none)
 Group.new("Whitespace",                 colors.grey_2,     colors.grey_0,      styles.none)
-Group.new("Folded",                     colors.grey_0,     colors.grey_1,      styles.none)
+Group.new("Folded",                     colors.grey_2,     colors.grey_accent,      styles.none)
 -- Git gutters and diffs
 Group.new('DiffAdd',                    colors.grey_0,     colors.theme_2,     styles.none)
 Group.new('DiffChange',                 colors.grey_0,     colors.theme_5,     styles.none)
@@ -212,6 +212,8 @@ Group.new("markdownLineBreak",          colors.theme_0,    colors.none,        s
 Group.new('luaFunctionCall',            groups.Function,   groups.Function,    groups.Function)
 -- Python
 Group.new('pythonoperator',             groups.Operator,   groups.Operator,    styles.none)
+Group.new('TSVariableBuiltin',          groups.Statement,   groups.Statement,    styles.none) -- self
+Group.new('TSMethod',                   groups.Function,    groups.Function,    styles.none)
 
 --hi! link pythonBuiltin Gruvbox1
 --hi! link pythonBuiltinObj Gruvbox1
