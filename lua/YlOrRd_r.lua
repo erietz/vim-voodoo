@@ -148,7 +148,7 @@ Group.new("PmenuSbar",                  colors.grey_3,     colors.grey_0,      s
 Group.new("PMenuSel",                   colors.theme_3,    colors.grey_0,      styles.none)
 Group.new("PmenuThumb",                 colors.grey_0,     colors.grey_2,      styles.none)
 Group.new("NormalFloat",                colors.text_color, colors.grey_accent, styles.none)
-Group.new("SpecialKey",                 colors.text_color, colors.grey_2,      styles.none)
+Group.new("SpecialKey",                 colors.grey_2,     colors.none,        styles.none)
 Group.new("SpellBad",                   groups.String,     colors.none,        styles.underline)
 Group.new("SpellCap",                   colors.theme_fire, colors.grey_0,      styles.none)
 Group.new("SpellLocal",                 colors.grey_4,     colors.grey_0,      styles.none)
@@ -215,15 +215,15 @@ Group.new('TSVariableBuiltin',          groups.Statement,  groups.Statement,   s
 Group.new('TSMethod',                   groups.Function,   groups.Function,    styles.none)
 Group.new('TSConstant',                 groups.Constant,   groups.Constant,    styles.none)
 
--- Telescope
-Group.new("TelescopeMatching"       , colors.theme_2    , colors.none , styles.bold)
-Group.new("TelescopeSelection"      , colors.text_color , colors.grey_1 , styles.bold)
-Group.new("TelescopeSelectionCaret" , colors.theme_2    , colors.none , styles.bold)
-Group.new("TelescopePromptPrefix"   , colors.theme_2    , colors.none , styles.bold)
-Group.new("TelescopeBorder"         , colors.theme_0    , colors.none , styles.bold)
-Group.new("TelescopePromptBorder"   , colors.theme_1    , colors.none , styles.bold)
-Group.new("TelescopeResultsBorder"  , colors.theme_3    , colors.none , styles.bold)
-Group.new("TelescopePreviewBorder"  , colors.theme_4    , colors.none , styles.bold)
+--                                  Telescope
+Group.new("TelescopeMatching"       , colors.theme_2 , colors.none   , styles.bold)
+Group.new("TelescopeSelection"      , colors.theme_1 , colors.grey_1 , styles.bold)
+Group.new("TelescopeSelectionCaret" , colors.theme_2 , colors.none   , styles.bold)
+Group.new("TelescopePromptPrefix"   , colors.theme_2 , colors.none   , styles.bold)
+Group.new("TelescopeBorder"         , colors.theme_0 , colors.none   , styles.bold)
+Group.new("TelescopePromptBorder"   , colors.theme_1 , colors.none   , styles.bold)
+Group.new("TelescopeResultsBorder"  , colors.theme_3 , colors.none   , styles.bold)
+Group.new("TelescopePreviewBorder"  , colors.theme_4 , colors.none   , styles.bold)
 
 -- Terminal
 vim.api.nvim_set_var('terminal_color_0',  theme_2)
