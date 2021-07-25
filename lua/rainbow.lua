@@ -122,7 +122,7 @@ Group.new('TabLineSelSeparator', colors.theme_5,    colors.none,        styles.n
 Group.new('TabLine',             colors.grey_3,     colors.grey_1,      styles.none)
 Group.new('TabLineSeparator',    colors.grey_1,     colors.none,        styles.none)
 Group.new('TablineFill',         colors.theme_3,    colors.grey_0,      styles.none)
-Group.new('StatusLine',          colors.grey_3,     colors.grey_accent, styles.none)
+Group.new('StatusLine',          colors.grey_0,     colors.theme_4,     styles.none)
 Group.new('StatusLineNC',        colors.grey_1,     colors.grey_accent, styles.none)
 Group.new('Conceal',             colors.grey_0,     colors.grey_4,      styles.none)
 Group.new('VertSplit',           colors.grey_2,     colors.none,        styles.none)
