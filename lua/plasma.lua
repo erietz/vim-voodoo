@@ -140,7 +140,7 @@ Group.new("Cursor",              colors.grey_0,     colors.grey_3,      styles.n
 Group.new("CursorLine",          colors.none,       colors.grey_accent, styles.none)
 Group.new("iCursor",             colors.grey_0,     colors.grey_3,      styles.none)
 Group.new("EndOfBuffer",         colors.none,       colors.none,        styles.none)
-Group.new("MatchParen",          colors.none,       colors.grey_2,      styles.none)
+Group.new("MatchParen",          colors.theme_1,       colors.grey_2,      styles.none)
 Group.new("NonText",             colors.none,       colors.none,        styles.none)
 Group.new("PMenu",               colors.text_color, colors.grey_accent, styles.none)
 Group.new("QuickFixLine",        colors.grey_0,     colors.theme_5,     styles.none)
