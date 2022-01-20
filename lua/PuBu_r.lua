@@ -16,7 +16,7 @@ if background == 'hard' then
 elseif background == 'soft' then
     grey_0 = '#3a3a3a'
 else
-    grey_0 = '#222D31'
+    grey_0 = '#282828'
 end
 
 local grey_1      = '#5c5c5c'
