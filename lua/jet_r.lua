@@ -1,5 +1,5 @@
 local function get_var(my_var_name, default_value)
-  s, v = pcall(function()
+  local s, v = pcall(function()
     return vim.api.nvim_get_var(my_var_name)
   end)
   if s then return v else return default_value end
@@ -12,11 +12,11 @@ local Color, colors, Group, groups, styles = require("colorbuddy").setup()
 
 local grey_0
 if background == 'hard' then
-    grey_0 = '#0F1419'
+  grey_0 = '#282a2e'
 elseif background == 'soft' then
-    grey_0 = '#3a3a3a'
+  grey_0 = '#373b41'
 else
-    grey_0 = '#282828'
+  grey_0 = '#282c34'
 end
 
 local grey_1      = '#5c5c5c'
@@ -37,40 +37,34 @@ local theme_6    = "#0000ff"
 local theme_fire = "#CF222B"
 
 if variant == 'light' then
-    Color.new('grey_accent', grey_accent)
-    Color.new('text_color',  '#37474F')
-    Color.new('grey_0',      '#F1F3F4')
-    Color.new('grey_1',      grey_3)
-    Color.new('grey_2',      grey_2)
-    Color.new('grey_3',      grey_1)
-    Color.new('grey_4',      grey_0)
-    Color.new('theme_0',     theme_0)
-    Color.new('theme_1',     theme_1)
-    Color.new('theme_2',     theme_2)
-    Color.new('theme_3',     theme_3)
-    Color.new('theme_4',     theme_4)
-    Color.new('theme_5',     theme_5)
-    Color.new('theme_6',     theme_6)
-    Color.new('theme_fire',  theme_fire)
+  Color.new('text_color',  '#37474F')
+  Color.new('grey_0',      '#F1F3F4')
+  Color.new('grey_1',      grey_3)
+  Color.new('grey_2',      grey_2)
+  Color.new('grey_3',      grey_1)
+  Color.new('grey_4',      grey_0)
 else
-    Color.new('grey_accent', grey_accent)
-    Color.new('text_color',  text_color)
-    Color.new('grey_0',      grey_0)
-    Color.new('grey_1',      grey_1)
-    Color.new('grey_2',      grey_2)
-    Color.new('grey_3',      grey_3)
-    Color.new('grey_4',      grey_4)
-    Color.new('theme_0',     theme_0)
-    Color.new('theme_1',     theme_1)
-    Color.new('theme_2',     theme_2)
-    Color.new('theme_3',     theme_3)
-    Color.new('theme_4',     theme_4)
-    Color.new('theme_5',     theme_5)
-    Color.new('theme_6',     theme_6)
-    Color.new('theme_fire',  theme_fire)
+  Color.new('grey_accent', grey_accent)
+  Color.new('text_color',  text_color)
+  Color.new('grey_0',      grey_0)
+  Color.new('grey_1',      grey_1)
+  Color.new('grey_2',      grey_2)
+  Color.new('grey_3',      grey_3)
+  Color.new('grey_4',      grey_4)
 end
 
--- Color assignments
+Color.new('grey_accent', grey_accent)
+Color.new('theme_0',     theme_0)
+Color.new('theme_1',     theme_1)
+Color.new('theme_2',     theme_2)
+Color.new('theme_3',     theme_3)
+Color.new('theme_4',     theme_4)
+Color.new('theme_5',     theme_5)
+Color.new('theme_6',     theme_6)
+Color.new('theme_fire',  theme_fire)
+
+
+-- Color assignments (see :h highlight-groups)
 
 Group.new('Normal',              colors.text_color, colors.grey_0,      styles.NONE)
 --
@@ -122,7 +116,7 @@ Group.new('TabLineSelSeparator', colors.theme_5,    colors.none,        styles.n
 Group.new('TabLine',             colors.grey_3,     colors.grey_1,      styles.none)
 Group.new('TabLineSeparator',    colors.grey_1,     colors.none,        styles.none)
 Group.new('TablineFill',         colors.theme_3,    colors.grey_0,      styles.none)
-Group.new('StatusLine',          colors.grey_0,     colors.theme_2,     styles.none)
+Group.new('StatusLine',          colors.grey_0,     colors.grey_accent, styles.none)
 Group.new('StatusLineNC',        colors.grey_1,     colors.grey_accent, styles.none)
 Group.new('Conceal',             colors.grey_0,     colors.grey_4,      styles.none)
 Group.new('VertSplit',           colors.grey_2,     colors.none,        styles.none)
@@ -156,7 +150,7 @@ Group.new("SpellLocal",          colors.grey_4,     colors.grey_0,      styles.n
 Group.new("SpellRare",           colors.grey_4,     colors.grey_0,      styles.none)
 Group.new("Visual",              colors.grey_0,     colors.theme_2,     styles.none)
 Group.new("VisualNOS",           colors.grey_0,     colors.text_color,  styles.none)
-Group.new("Whitespace",          colors.grey_2,     colors.grey_0,      styles.none)
+Group.new("Whitespace",          colors.grey_1,     colors.grey_0,      styles.none)
 Group.new("Folded",              colors.grey_2,     colors.grey_accent, styles.none)
 
 -- Git gutters and diffs
